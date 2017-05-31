@@ -1,1233 +1,461 @@
-<!DOCTYPE html>
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Dashboard - FLATY Admin</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+<title>Voucher Website</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Hosting Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-1.11.1.min.js"></script>
 
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+<!-- Custom Theme files -->
+<link href="css/font-awesome.css" rel='stylesheet' type='text/css' />
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<link href="css/ctm_style.css" rel='stylesheet' type='text/css' />
 
-        <!--base css styles-->
-        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+<!-- Custom Theme files -->
+<!-- webfonts -->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700,800,900' rel='stylesheet' type='text/css'>
+<!-- webfonts -->
 
-        <!--page specific css styles-->
+<!-- Add fancyBox main JS and CSS files -->
+<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+<link href="css/popup.css" rel="stylesheet" type="text/css">
+<script>
+    $(document).ready(function() {
+        $('.popup-with-zoom-anim').magnificPopup({
+            type: 'inline',
+            fixedContentPos: false,
+            fixedBgPos: true,
+            overflowY: 'auto',
+            closeBtnInside: true,
+            preloader: false,
+            midClick: true,
+            removalDelay: 300,
+            mainClass: 'my-mfp-zoom-in'
+    });
+});
+</script>
+</head>
+<body>
+    <div class="header">
+        <div class="">
+            <div class="header_top">
+                <div class="container">
+                    <div class="logo">
+                        <a href="index.html"><img src="images/logo.png" alt=""/></a>
+                    </div> 
+                    <div class="cssmenu">
+                            <ul>
+                                <li><a href="mailto:info@mycompany.com">info(at)voucher.com</a></li> 
+                                <li class="active"><a href="login.html">Log In</a></li> 
+                                <li><a href="register.html">Register</a></li>
+                            </ul>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+            </div>
+            <div class="h_menu4"><!-- start h_menu4 -->
+            <div class="container">
+                <a class="toggleMenu" href="#">Menu</a>
+                <ul class="nav">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Store<span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a class="droplink" href="store.html">Detail</a></li>
+                        <li><a class="droplink" href="theme.html">Theme</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="promo.html">Promo</a></li>
+                    <li><a href="reseller.html">Reseller</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                 </ul>
+                 <script type="text/javascript" src="js/nav.js"></script>
+            </div>
 
-        <!--flaty css styles-->
-        <link rel="stylesheet" href="css/flaty.css">
-        <link rel="stylesheet" href="css/flaty-responsive.css">
+            </div><!-- end h_menu4 -->
+         </div>
+    </div>
+    <div class="banner">
+        <div class="container">
 
-        <link rel="shortcut icon" href="img/favicon.png">
-    </head>
-    <body>
-
-        <!-- BEGIN Theme Setting -->
-        <div id="theme-setting">
-            <a href="#"><i class="fa fa-gears fa fa-2x"></i></a>
-            <ul>
-                <li>
-                    <span>Skin</span>
-                    <ul class="colors" data-target="body" data-prefix="skin-">
-                        <li class="active"><a class="blue" href="#"></a></li>
-                        <li><a class="red" href="#"></a></li>
-                        <li><a class="green" href="#"></a></li>
-                        <li><a class="orange" href="#"></a></li>
-                        <li><a class="yellow" href="#"></a></li>
-                        <li><a class="pink" href="#"></a></li>
-                        <li><a class="magenta" href="#"></a></li>
-                        <li><a class="gray" href="#"></a></li>
-                        <li><a class="black" href="#"></a></li>
+           <!-- FlexSlider -->
+           <section class="slider">
+               <div class="flexslider">
+                    <ul class="slides">
+                        <li>
+                            <img src="images/freestock/hero-1.jpg" class="" alt=""/>
+                        </li>
+                        <li>
+                            <img src="images/freestock/hero-2.jpg" class="" alt=""/>
+                        </li>
                     </ul>
-                </li>
-                <li>
-                    <span>Navbar</span>
-                    <ul class="colors" data-target="#navbar" data-prefix="navbar-">
-                        <li class="active"><a class="blue" href="#"></a></li>
-                        <li><a class="red" href="#"></a></li>
-                        <li><a class="green" href="#"></a></li>
-                        <li><a class="orange" href="#"></a></li>
-                        <li><a class="yellow" href="#"></a></li>
-                        <li><a class="pink" href="#"></a></li>
-                        <li><a class="magenta" href="#"></a></li>
-                        <li><a class="gray" href="#"></a></li>
-                        <li><a class="black" href="#"></a></li>
-                    </ul>
-                </li>
-                <li>
-                    <span>Sidebar</span>
-                    <ul class="colors" data-target="#main-container" data-prefix="sidebar-">
-                        <li class="active"><a class="blue" href="#"></a></li>
-                        <li><a class="red" href="#"></a></li>
-                        <li><a class="green" href="#"></a></li>
-                        <li><a class="orange" href="#"></a></li>
-                        <li><a class="yellow" href="#"></a></li>
-                        <li><a class="pink" href="#"></a></li>
-                        <li><a class="magenta" href="#"></a></li>
-                        <li><a class="gray" href="#"></a></li>
-                        <li><a class="black" href="#"></a></li>
-                    </ul>
-                </li>
-                <li>
-                    <span></span>
-                    <a data-target="navbar" href="#"><i class="fa fa-square-o"></i> Fixed Navbar</a>
-                    <a class="hidden-inline-xs" data-target="sidebar" href="#"><i class="fa fa-square-o"></i> Fixed Sidebar</a>
-                </li>
-            </ul>
+                </div>
+            </section>
+            <!-- FlexSlider -->
+
         </div>
-        <!-- END Theme Setting -->
-
-        <!-- BEGIN Navbar -->
-        <div id="navbar" class="navbar">
-            <button type="button" class="navbar-toggle navbar-btn collapsed" data-toggle="collapse" data-target="#sidebar">
-                <span class="fa fa-bars"></span>
-            </button>
-            <a class="navbar-brand" href="#">
-                <small>
-                    <i class="fa fa-desktop"></i>
-                    FLATY Admin
-                </small>
-            </a>
-
-            <!-- BEGIN Navbar Buttons -->
-            <ul class="nav flaty-nav pull-right">
-                <!-- BEGIN Button Tasks -->
-                <li class="hidden-xs">
-                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                        <i class="fa fa-tasks"></i>
-                        <span class="badge badge-warning">4</span>
-                    </a>
-
-                    <!-- BEGIN Tasks Dropdown -->
-                    <ul class="dropdown-navbar dropdown-menu">
-                        <li class="nav-header">
-                            <i class="fa fa-check"></i>
-                            4 Tasks to complete
-                        </li>
-
-                        <li>
-                            <a href="#">
-                                <div class="clearfix">
-                                    <span class="pull-left">Software Update</span>
-                                    <span class="pull-right">75%</span>
-                                </div>
-
-                                <div class="progress progress-mini">
-                                    <div style="width:75%" class="progress-bar progress-bar-warning"></div>
-                                </div>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#">
-                                <div class="clearfix">
-                                    <span class="pull-left">Transfer To New Server</span>
-                                    <span class="pull-right">45%</span>
-                                </div>
-
-                                <div class="progress progress-mini">
-                                    <div style="width:45%" class="progress-bar progress-bar-danger"></div>
-                                </div>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#">
-                                <div class="clearfix">
-                                    <span class="pull-left">Bug Fixes</span>
-                                    <span class="pull-right">20%</span>
-                                </div>
-
-                                <div class="progress progress-mini">
-                                    <div style="width:20%" class="progress-bar"></div>
-                                </div>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#">
-                                <div class="clearfix">
-                                    <span class="pull-left">Writing Documentation</span>
-                                    <span class="pull-right">85%</span>
-                                </div>
-
-                                <div class="progress progress-mini progress-striped active">
-                                    <div style="width:85%" class="progress-bar progress-bar-success"></div>
-                                </div>
-                            </a>
-                        </li>
-
-                        <li class="more">
-                            <a href="#">See tasks with details</a>
-                        </li>
-                    </ul>
-                    <!-- END Tasks Dropdown -->
-                </li>
-                <!-- END Button Tasks -->
-
-                <!-- BEGIN Button Notifications -->
-                <li class="hidden-xs">
-                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                        <i class="fa fa-bell"></i>
-                        <span class="badge badge-important">5</span>
-                    </a>
-
-                    <!-- BEGIN Notifications Dropdown -->
-                    <ul class="dropdown-navbar dropdown-menu">
-                        <li class="nav-header">
-                            <i class="fa fa-warning"></i>
-                            5 Notifications
-                        </li>
-
-                        <li class="notify">
-                            <a href="#">
-                                <i class="fa fa-comment orange"></i>
-                                <p>New Comments</p>
-                                <span class="badge badge-warning">4</span>
-                            </a>
-                        </li>
-
-                        <li class="notify">
-                            <a href="#">
-                                <i class="fa fa-twitter blue"></i>
-                                <p>New Twitter followers</p>
-                                <span class="badge badge-info">7</span>
-                            </a>
-                        </li>
-
-                        <li class="notify">
-                            <a href="#">
-                                <img src="img/demo/avatar/avatar2.jpg" alt="Alex" />
-                                <p>David would like to become moderator.</p>
-                            </a>
-                        </li>
-
-                        <li class="notify">
-                            <a href="#">
-                                <i class="fa fa-bug pink"></i>
-                                <p>New bug in program!</p>
-                            </a>
-                        </li>
-
-                        <li class="notify">
-                            <a href="#">
-                                <i class="fa fa-shopping-cart green"></i>
-                                <p>You have some new orders</p>
-                                <span class="badge badge-success">+10</span>
-                            </a>
-                        </li>
-
-                        <li class="more">
-                            <a href="#">See all notifications</a>
-                        </li>
-                    </ul>
-                    <!-- END Notifications Dropdown -->
-                </li>
-                <!-- END Button Notifications -->
-
-                <!-- BEGIN Button Messages -->
-                <li class="hidden-xs">
-                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                        <i class="fa fa-envelope"></i>
-                        <span class="badge badge-success">3</span>
-                    </a>
-
-                    <!-- BEGIN Messages Dropdown -->
-                    <ul class="dropdown-navbar dropdown-menu">
-                        <li class="nav-header">
-                            <i class="fa fa-comments"></i>
-                            3 Messages
-                        </li>
-
-                        <li class="msg">
-                            <a href="#">
-                                <img src="img/demo/avatar/avatar3.jpg" alt="Sarah's Avatar" />
-                                <div>
-                                    <span class="msg-title">Sarah</span>
-                                    <span class="msg-time">
-                                        <i class="fa fa-clock-o"></i>
-                                        <span>a moment ago</span>
-                                    </span>
-                                </div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            </a>
-                        </li>
-
-                        <li class="msg">
-                            <a href="#">
-                                <img src="img/demo/avatar/avatar4.jpg" alt="Emma's Avatar" />
-                                <div>
-                                    <span class="msg-title">Emma</span>
-                                    <span class="msg-time">
-                                        <i class="fa fa-clock-o"></i>
-                                        <span>2 Days ago</span>
-                                    </span>
-                                </div>
-                                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris ...</p>
-                            </a>
-                        </li>
-
-                        <li class="msg">
-                            <a href="#">
-                                <img src="img/demo/avatar/avatar5.jpg" alt="John's Avatar" />
-                                <div>
-                                    <span class="msg-title">John</span>
-                                    <span class="msg-time">
-                                        <i class="fa fa-clock-o"></i>
-                                        <span>8:24 PM</span>
-                                    </span>
-                                </div>
-                                <p>Duis aute irure dolor in reprehenderit in ...</p>
-                            </a>
-                        </li>
-
-                        <li class="more">
-                            <a href="#">See all messages</a>
-                        </li>
-                    </ul>
-                    <!-- END Notifications Dropdown -->
-                </li>
-                <!-- END Button Messages -->
-
-                <!-- BEGIN Button User -->
-                <li class="user-profile">
-                    <a data-toggle="dropdown" href="#" class="user-menu dropdown-toggle">
-                        <img class="nav-user-photo" src="img/demo/avatar/avatar1.jpg" alt="Penny's Photo" />
-                        <span class="hhh" id="user_info">
-                            Penny
-                        </span>
-                        <i class="fa fa-caret-down"></i>
-                    </a>
-
-                    <!-- BEGIN User Dropdown -->
-                    <ul class="dropdown-menu dropdown-navbar" id="user_menu">
-                        <li class="nav-header">
-                            <i class="fa fa-clock-o"></i>
-                            Logined From 20:45
-                        </li>
-
-                        <li>
-                            <a href="#">
-                                <i class="fa fa-cog"></i>
-                                Account Settings
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#">
-                                <i class="fa fa-user"></i>
-                                Edit Profile
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#">
-                                <i class="fa fa-question"></i>
-                                Help
-                            </a>
-                        </li>
-
-                        <li class="divider visible-xs"></li>
-
-                        <li class="visible-xs">
-                            <a href="#">
-                                <i class="fa fa-tasks"></i>
-                                Tasks
-                                <span class="badge badge-warning">4</span>
-                            </a>
-                        </li>
-                        <li class="visible-xs">
-                            <a href="#">
-                                <i class="fa fa-bell"></i>
-                                Notifications
-                                <span class="badge badge-important">8</span>
-                            </a>
-                        </li>
-                        <li class="visible-xs">
-                            <a href="#">
-                                <i class="fa fa-envelope"></i>
-                                Messages
-                                <span class="badge badge-success">5</span>
-                            </a>
-                        </li>
-
-                        <li class="divider"></li>
-
-                        <li>
-                            <a href="#">
-                                <i class="fa fa-off"></i>
-                                Logout
-                            </a>
-                        </li>
-                    </ul>
-                    <!-- BEGIN User Dropdown -->
-                </li>
-                <!-- END Button User -->
-            </ul>
-            <!-- END Navbar Buttons -->
+    </div>
+    <div class="domain">
+        <div class="container">
+            <form class="search-form domain-search">
+                <div class="two-fifth column first">
+                    <img src="images/search.png" alt=""/>
+                    <h2><span class="m_1">search your</span><br>domain</h2>
+                </div>
+                <div class="three-fifth column first">
+                    <input type="text" class="text" value="Enter your domain name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your domain name';}">               
+                </div>
+                <div class="one-fifth column">
+                    <span class="selection-box"><select class="domains valid" name="domains">
+                        <option>Year(0-1 Year)</option>
+                        <option>.info (From $3 / Year)</option>
+                        <option>.net (From $3 / Year)</option>
+                        <option>.org (From $3 / Year)</option>
+                    </select></span>
+                </div>
+                <div class="one-fifth column">
+                    <span class="selection-box"><select class="domains valid" name="domains">
+                        <option>.com</option>
+                        <option>.info (From $3 / Year)</option>
+                        <option>.net (From $3 / Year)</option>
+                        <option>.org (From $3 / Year)</option>
+                    </select></span>
+                </div>
+                <div class="one-fifth column">
+                    <input type="submit" value="Search">
+                </div>
+                <div class="clearfix"> </div>
+            </form>
         </div>
-        <!-- END Navbar -->
-
-        <!-- BEGIN Container -->
-        <div class="container" id="main-container">
-            <!-- BEGIN Sidebar -->
-            <div id="sidebar" class="navbar-collapse collapse">
-                <!-- BEGIN Navlist -->
-                <ul class="nav nav-list">
-                    <!-- BEGIN Search Form -->
-                    <li>
-                        <form target="#" method="GET" class="search-form">
-                            <span class="search-pan">
-                                <button type="submit">
-                                    <i class="fa fa-search"></i>
-                                </button>
-                                <input type="text" name="search" placeholder="Search ..." autocomplete="off" />
-                            </span>
-                        </form>
-                    </li>
-                    <!-- END Search Form -->
-                    <li class="active">
-                        <a href="index.html">
-                            <i class="fa fa-dashboard"></i>
-                            <span>Dashboard</span>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="typography.html">
-                            <i class="fa fa-text-width"></i>
-                            <span>Typography</span>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="dropdown-toggle">
-                            <i class="fa fa-desktop"></i>
-                            <span>UI Elements</span>
-                            <b class="arrow fa fa-angle-right"></b>
-                        </a>
-
-                        <!-- BEGIN Submenu -->
-                        <ul class="submenu">
-                            <li><a href="ui_general.html">General</a></li>
-                            <li><a href="ui_button.html">Button</a></li>
-                            <li><a href="ui_tabs.html">Tab & Accordion</a></li>
-                            <li><a href="ui_slider.html">Slider</a></li>
-                            <li><a href="ui_tile.html">Tile</a></li>
-                            <li><a href="ui_timeline.html">Timeline</a></li>
-                            <li><a href="ui_chart.html">Chart</a></li>
-                            <li><a href="ui_message.html">Conversation</a></li>
-                            <li><a href="ui_horizontal-menu.html">Horizontal Menu</a></li>
-                            <li><a href="ui_icon.html">Icon</a></li>
+    </div>
+    <div class="benefit">
+        <div class="container">
+            <h4 class="tz-title-4 tzcolor-blue">
+                <p class="tzweight_Bold"><span class="m_1">our<br></span>Benefits</p>
+            </h4>
+            <div class="box1">
+                <div class="col-md-4 row_10">
+                    <ul class="service_grid">
+                       <i class="fa fa-circle-o-notch" aria-hidden="true"></i>
+                       <li class="desc">
+                        <h3>99.9% Uptime</h3>
+                        <p>Service Level Agreement (SLA) dari SmartMedia adalah 99,99% mencakup Up-time layanan & koneksi jaringan..</p>
+                       </li>
+                       <div class="clearfix"> </div>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="service_grid">
+                       <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                       <li class="desc">
+                        <h3>24/7/365 Support</h3>
+                        <p>We're always here to assist via email, LiveChat, and telephone!.</p>
+                       </li>
+                       <div class="clearfix"> </div>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="service_grid">
+                       <i class="fa fa-desktop" aria-hidden="true"></i>
+                       <li class="desc">
+                        <h3>Protect Your pc</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
+                       </li>
+                       <div class="clearfix"> </div>
+                    </ul>
+                </div>
+            </div>
+            <div class="box1">
+                <div class="col-md-4">
+                    <ul class="service_grid">
+                       <i class="fa fa-cogs" aria-hidden="true"></i>
+                       <li class="desc">
+                        <h3>Website Builder</h3>
+                        <p>Instant access to our state of the art drag and drop website editor. Choose from 100s of professional looking templates..</p>
+                       </li>
+                       <div class="clearfix"> </div>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="service_grid">
+                       <i class="fa fa-cloud" aria-hidden="true"></i>
+                       <li class="desc">
+                        <h3>Domain Transfer</h3>
+                        <p>We'll move your site, or sites, free of charge with our white-glove migration service..</p>
+                       </li>
+                       <div class="clearfix"> </div>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="service_grid">
+                       <i class="fa fa-unlock-alt fa-inc-left" aria-hidden="true"></i>
+                       <li class="desc">
+                        <h3>100% Security</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
+                       </li>
+                       <div class="clearfix"> </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="features">
+        <div class="container">
+            <div class="col-md-4">
+               <h4 class="tz-title-4 tzcolor-blue">
+                 <p class="tzweight_Bold m_2"><span class="m_1">Now<br></span>What is Hot</p>
+              </h4>
+              <ul class="offer">
+                 <li><p class="m_3"><span class="m_4">Get Up to<br></span>50%</p></li>	
+                 <li><p class="m_5">Off</p></li>	
+                 <li class="last"><p class="m_6"><span class="m_7">Each<br></span>Hosting</p></li>
+              </ul>
+            </div>
+            <div class="col-md-8 row_1">
+                <h4 class="tz-title-4 tzcolor-blue">
+                 <p class="tzweight_Bold m_2"><span class="m_1">our<br></span>Feature</p>
+               </h4>
+               <div class="section_1">
+                <div class="col_1_of_3 span_1_of_3">
+                    <div class="list_1">
+                        <ul>
+                          <li><a href="">Unlimited Email.</a></li>
+                          <li><a href="">cPanel Control Panel.</a></li>                           
+                          <li><a href="">LiteSpeed Enterprise.</a></li>      
+                          <li><a href="">SSH, GIT, Addon Domain.</a></li>
                         </ul>
-                        <!-- END Submenu -->
-                    </li>
-
-                    <li>
-                        <a href="#" class="dropdown-toggle">
-                            <i class="fa fa-edit"></i>
-                            <span>Forms</span>
-                            <b class="arrow fa fa-angle-right"></b>
-                        </a>
-
-                        <!-- BEGIN Submenu -->
-                        <ul class="submenu">
-                            <li><a href="form_layout.html">Layout</a></li>
-                            <li><a href="form_component.html">Component</a></li>
-                            <li><a href="form_wizard.html">Wizard</a></li>
-                            <li><a href="form_validation.html">Validation</a></li>
+                    </div>
+                </div>
+                <div class="col_1_of_3 span_1_of_3">
+                    <div class="list_1">
+                        <ul>
+                        <li><a href="">Free Backup Daily.</a></li>  
+                          <li><a href="">Website Builder.</a></li>
+                          <li><a href="">Instant Backup, dll.</a></li>
+                          <li><a href="">MySQL, PHPMyAdmin, dll.</a></li>
+                           
                         </ul>
-                        <!-- END Submenu -->
-                    </li>
-
-                    <li>
-                        <a href="#" class="dropdown-toggle">
-                            <i class="fa fa-list"></i>
-                            <span>Tables</span>
-                            <b class="arrow fa fa-angle-right"></b>
-                        </a>
-
-                        <!-- BEGIN Submenu -->
-                        <ul class="submenu">
-                            <li><a href="table_basic.html">Basic</a></li>
-                            <li><a href="table_advance.html">Advance</a></li>
-                            <li><a href="table_dynamic.html">Dynamic</a></li>
-                        </ul>
-                        <!-- END Submenu -->
-                    </li>
-
-                    <li>
-                        <a href="#" class="dropdown-toggle">
-                            <i class="fa fa-globe"></i>
-                            <span>Maps</span>
-                            <b class="arrow fa fa-angle-right"></b>
-                        </a>
-
-                        <!-- BEGIN Submenu -->
-                        <ul class="submenu">
-                            <li><a href="map_google.html">Google Maps</a></li>
-                            <li><a href="map_vector.html">Vector Maps</a></li>
-                        </ul>
-                        <!-- END Submenu -->
-                    </li>
-
-                    <li>
-                        <a href="box.html">
-                            <i class="fa fa-list-alt"></i>
-                            <span>Box</span>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="calendar.html">
-                            <i class="fa fa-calendar"></i>
-                            <span>Calendar</span>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="gallery.html">
-                            <i class="fa fa-picture-o"></i>
-                            <span>Gallery</span>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="grid.html">
-                            <i class="fa fa-th"></i>
-                            <span>Griding System</span>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="dropdown-toggle">
-                            <i class="fa fa-file-text-o"></i>
-                            <span>Sample Pages</span>
-                            <b class="arrow fa fa-angle-right"></b>
-                        </a>
-
-                        <!-- BEGIN Submenu -->
-                        <ul class="submenu">
-                            <li><a href="extra_login.html">Login &amp; Register</a></li>
-                            <li><span>Email</span>
+                    </div>
+                </div>
+                <div class="col_1_of_3 span_1_of_3">
+                    <a class="but1" href="#">View All</a>
+                </div>
+                <div class="clearfix"> </div>
+               </div>
+            </div>
+        </div>
+    </div>
+    <div class="price">
+        <div class="container">
+            <h4 class="tz-title-4 tzcolor-blue">
+                <p class="tzweight_Bold"><span class="m_1">our<br></span>Benefits</p>
+            </h4>
+            <div class="col-md-3">
+                <div class="pricing-table-grid">
+                    <h3><span class="dollar">Rp </span>15<span class="dollar">rb</span> <br><span class="month">Per Bulan</span></h3>
+                    <ul>
+                        <li><span>Standard Plan</span></li>
+                        <li><a href="#">500 MB Storage</a></li>
+                        <li><a href="#">256 MB Virtual Memory</a></li>
+                        <li><a href="#">Half Core CPU</a></li>
+                        <li><a href="#">Managed Hosting</a></li>
+                        <li><a href="#">Unlimited Bandwidth</a></li>
+                    </ul>
+                    <a class="popup-with-zoom-anim order-btn" href="#small-dialog">Order</a>
+                </div>
+                <div id="small-dialog" class="mfp-hide">
+                    <div class="pop_up">
+                        <div class="payment-online-form-left">
+                            <form>
+                                <h4><span class="shipping"> </span>Shipping</h4>
                                 <ul>
-                                    <li><a href="extra_mail-list.html">Inbox</a></li>
-                                    <li><a href="extra_mail-msg.html">Mail Thread</a></li>
-                                    <li><a href="extra_mail-compose.html">Compose</a></li>
+                                    <li><input class="text-box-dark" type="text" value="Frist Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Frist Name';}"></li>
+                                    <li><input class="text-box-dark" type="text" value="Last Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Last Name';}"></li>
                                 </ul>
-                            </li>
-                            <li><a href="extra_profile.html">User Profile</a></li>
-                            <li><a href="extra_invoice.html">Invoice</a></li>
-                            <li><a href="extra_search.html">Search Results</a></li>
-                        </ul>
-                        <!-- END Submenu -->
-                    </li>
-
-                    <li>
-                        <a href="#" class="dropdown-toggle">
-                            <i class="fa fa-file"></i>
-                            <span>Other Pages</span>
-                            <b class="arrow fa fa-angle-right"></b>
-                        </a>
-
-                        <!-- BEGIN Submenu -->
-                        <ul class="submenu">
-                            <li><a href="more_blank.html">Blank Page</a></li>
-                            <li><a href="more_full-width.html">Full Width Page</a></li>
-                            <li><span>Errors</span>
                                 <ul>
-                                    <li><a href="more_error-404.html">Error 404</a></li>
-                                    <li><a href="more_error-500.html">Error 500</a></li>
+                                    <li><input class="text-box-dark" type="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}"></li>
+                                    <li><input class="text-box-dark" type="text" value="Company Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Company Name';}"></li>
                                 </ul>
-                            </li>
-                            <li><a href="more_set-skin.html">Skin</a></li>
-                            <li><a href="more_set-sidebar-navbar-color.html">Sidebar &amp; Navbar</a></li>
-                            <li><a href="more_sidebar-collapsed.html">Collapsed Sidebar</a></li>
-                        </ul>
-                        <!-- END Submenu -->
-                    </li>
+                                <ul>
+                                    <li><input class="text-box-dark" type="text" value="Phone" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Phone';}"></li>
+                                    <li><input class="text-box-dark" type="text" value="Address" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Address';}"></li>
+                                    <div class="clearfix"> </div>
+                                </ul>
+                                <div class="clear"> </div>
+                            <ul class="payment-type">
+                                <h4><span class="payment"> </span> Payments</h4>
+                                <li>
+                                    <span class="col_checkbox">
+                                    <input id="3" class="css-checkbox1" type="checkbox">
+                                    <label for="3" name="demo_lbl_1" class="css-label1"> </label>
+                                    <a class="visa" href="#"> </a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="col_checkbox">
+                                        <input id="4" class="css-checkbox2" type="checkbox">
+                                        <label for="4" name="demo_lbl_2" class="css-label2"> </label>
+                                        <a class="paypal" href="#"> </a>
+                                    </span>
+                                </li>
+                                <div class="clearfix"> </div>
+                            </ul>
+                                <ul>
+                                    <li><input class="text-box-dark" type="text" value="Card Number" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Card Number';}"></li>
+                                    <li><input class="text-box-dark" type="text" value="Name on card" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name on card';}"></li>
+                                    <div class="clearfix"> </div>
+                                </ul>
+                                <ul>
+                                    <li><input class="text-box-light hasDatepicker" type="text" id="datepicker" value="Expiration Date" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Expiration Date';}"><em class="pay-date"> </em></li>
+                                    <li><input class="text-box-dark" type="text" value="Security Code" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Security Code';}"></li>
+                                    <div class="clearfix"> </div>
+                                </ul>
+                                <ul class="payment-sendbtns">
+                                    <li><input type="reset" value="Cancel"></li>
+                                    <li><input type="submit" value="Process order"></li>
+                                </ul>
+                                <div class="clearfix"> </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+             </div>
+             <div class="col-md-3">
+                <div class="pricing-table-grid">
+                    <h3><span class="dollar">Rp </span>100<span class="dollar">rb</span> <br><span class="month">Per Bulan</span></h3>
+                    <ul>
+                        <li><span>Advanced Plan</span></li>
+                        <li><a href="#">1 GB Storage</a></li>
+                        <li><a href="#">Indonesia Data Center</a></li>
+                        <li><a href="#">256 MB Virtual Memory</a></li>
+                        <li><a href="#">Single Core CPU</a></li>
+                        <li><a href="#">Unlimited Bandwidth</a></li>
+                    </ul>
+                    <a class="popup-with-zoom-anim order-btn" href="#small-dialog">Order</a>
+                </div>
+             </div>	
+             <div class="col-md-3">
+                <div class="pricing-table-grid">
+                    <h3><span class="dollar">Rp </span>400<span class="dollar">rb</span> <br><span class="month">Per Bulan</span></h3>
+                    <ul>
+                        <li><span>Business Plan</span></li>
+                        <li><a href="#">60 GB Storage</a></li>
+                        <li><a href="#">Free cPanel/WHM</a></li>
+                        <li><a href="#">1024 MB Virtual Memory</a></li>
+                        <li><a href="#">Single Core CPU</a></li>
+                        <li><a href="#">Unlimited Bandwidth</a></li>
+                    </ul>
+                    <a class="popup-with-zoom-anim order-btn" href="#small-dialog">Order</a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="pricing-table-grid">
+                    <h3><span class="dollar">Rp </span>1000<span class="dollar">rb</span> <br><span class="month">Per Bulan</span></h3>
+                    <ul>
+                        <li><span>Gold Plan</span></li>
+                        <li><a href="#">SATA 2x1 TB Storage</a></li>
+                        <li><a href="#">Indonesia Data Center</a></li>
+                        <li><a href="#">DDR3 16GB Virtual Memory</a></li>
+                        <li><a href="#">3.3 GHZ CPU</a></li>
+                        <li><a href="#">Unlimited Bandwidth</a></li>
+                    </ul>
+                    <a class="popup-with-zoom-anim order-btn" href="#small-dialog">Order</a>
+                </div>
+            </div>	
+            <div class="clearfix"> </div>								
+       </div>
+    </div>
+    <div class="domain">
+        <div class="container">
+            <form class="search-form domain-search" action="register.html">
+                <div class="two-fifth signup column first">
+                    <img src="images/msg.png" alt=""/>
+                    <h2><span class="m_1">Sign Up Your</span><br>Newsletter</h2>
+                </div>
+                <div class="three-fifth searchbar column first">
+                    <input type="text" class="text" value="Enter your domain name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your domain name';}">               
+                </div>
+                <div class="one-fifth col_2 ">
+                    <input type="submit" value="Sign Up Now">
+                </div>
+                <div class="clearfix"> </div>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="col-md-3 box_1">
+                <img src="images/f_logo.png" alt=""/>
+                <p>© 2015 Template by <a href="http://w3layouts.com" target="_blank"> w3layouts</a></p>
+            </div>
+            <div class="col-md-3 box_2">
+                <h4>Quick Links</h4>
+                <ul class="list_2">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="theme.html">Theme</a></li>
+                    <li><a href="promo.html">Promo</a></li>
+                    <li><a href="reseller.html">Reseller</a></li>
                 </ul>
-                <!-- END Navlist -->
-
-                <!-- BEGIN Sidebar Collapse Button -->
-                <div id="sidebar-collapse" class="visible-lg">
-                    <i class="fa fa-angle-double-left"></i>
-                </div>
-                <!-- END Sidebar Collapse Button -->
+                <ul class="list_2">
+                    <li><a href="faq.html">Faq</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="clearfix"> </div>
             </div>
-            <!-- END Sidebar -->
-
-            <!-- BEGIN Content -->
-            <div id="main-content">
-                <!-- BEGIN Page Title -->
-                <div class="page-title">
-                    <div>
-                        <h1><i class="fa fa-file-o"></i> Dashboard</h1>
-                        <h4>Overview, stats, chat and more</h4>
-                    </div>
-                </div>
-                <!-- END Page Title -->
-
-                <!-- BEGIN Breadcrumb -->
-                <div id="breadcrumbs">
-                    <ul class="breadcrumb">
-                        <li class="active"><i class="fa fa-home"></i> Home</li>
-                    </ul>
-                </div>
-                <!-- END Breadcrumb -->
-
-
-                <!-- BEGIN Tiles -->
-                <div class="row">
-                    <div class="col-md-7">
-                        <div class="row">
-                            <div class="col-md-7">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="tile">
-                                            <p class="title">FLATY - Responsive Admin Template</p>
-                                            <p>Based on twitter bootstrap, 9 predefined color, clean and minimal design, easy to change and etc.</p>
-                                            <div class="img img-bottom">
-                                                <i class="fa fa-desktop"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-md-6 tile-active">
-                                        <a class="tile tile-pink" data-stop="3000" href="http://codecanyon.net/item/flaty-wp-premium-wordpress-flat-admin-template/5329999">
-                                            <div class="img img-center">
-                                                <img src="img/demo/wp-logo.png" />
-                                            </div>
-                                            <p class="title text-center">Visit FLATY wp</p>
-                                        </a>
-
-                                        <a class="tile tile-orange" href="http://codecanyon.net/item/flaty-wp-premium-wordpress-flat-admin-template/5329999">
-                                            <p>FLATY wp is new custom theme designed for the Wordpress admin.</p>
-                                        </a>
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <a class="tile tile-red" href="http://themeforest.net/item/flaty-premium-responsive-admin-template/5247864">
-                                            <div class="img img-center">
-                                                <i class="fa fa-shopping-cart"></i>
-                                            </div>
-                                            <p class="title text-center">Buy FLATY</p>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-5">
-                                <div class="row">
-                                    <div class="col-md-12 tile-active">
-                                        <div class="tile tile-magenta">
-                                            <div class="img img-center">
-                                                <i class="fa fa-desktop"></i>
-                                            </div>
-                                            <p class="title text-center">FLATY Admin</p>
-                                        </div>
-
-                                        <div class="tile tile-blue">
-                                            <p class="title">FLATY Admin</p>
-                                            <p>FLATY is the new premium and fully responsive admin dashboard template.</p>
-                                            <div class="img img-bottom">
-                                                <i class="fa fa-desktop"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="tile tile-green">
-                                            <div class="img">
-                                                <i class="fa fa-copy"></i>
-                                            </div>
-                                            <div class="content">
-                                                <p class="big">+30</p>
-                                                <p class="title">Ready Page</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-5">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="tile tile-orange">
-                                    <div class="img">
-                                        <i class="fa fa-comments"></i>
-                                    </div>
-                                    <div class="content">
-                                        <p class="big">128</p>
-                                        <p class="title">Comments</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6">
-                                <div class="tile tile-dark-blue">
-                                    <div class="img">
-                                        <i class="fa fa-download"></i>
-                                    </div>
-                                    <div class="content">
-                                        <p class="big">+160</p>
-                                        <p class="title">Downloads</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-md-12 tile-active">
-                                <div class="tile tile-img" data-stop="3500" style="background-image: url(img/demo/gallery/5.jpg);">
-                                    <p class="title">Gallery</p>
-                                </div>
-
-                                <a class="tile tile-lime" data-stop="5000" href="gallery.html">
-                                    <p class="title">Gallery page</p>
-                                    <p>Click on this tile block to see our amazing gallery page. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                    <div class="img img-bottom">
-                                        <i class="fa fa-picture-o"></i>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- END Tiles -->
-
-
-                <!-- BEGIN Main Content -->
-                <div class="row">
-                    <div class="col-md-7">
-                        <div class="box">
-                            <div class="box-title">
-                                <h3><i class="fa fa-bar-chart-o"></i> Visitors Chart</h3>
-                                <div class="box-tool">
-                                    <a data-action="collapse" href="#"><i class="fa fa-chevron-up"></i></a>
-                                    <a data-action="close" href="#"><i class="fa fa-times"></i></a>
-                                </div>
-                            </div>
-                            <div class="box-content">
-                                <div id="visitors-chart" style="margin-top:20px; position:relative; height: 290px;"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-5">
-                        <div class="box">
-                            <div class="box-title">
-                                <h3><i class="fa fa-bar-chart-o"></i> Weekly Visitors Stat</h3>
-                                <div class="box-tool">
-                                    <a data-action="collapse" href="#"><i class="fa fa-chevron-up"></i></a>
-                                    <a data-action="close" href="#"><i class="fa fa-times"></i></a>
-                                </div>
-                            </div>
-                            <div class="box-content">
-                                <ul class="weekly-stats">
-                                    <li>
-                                        <span class="inline-sparkline">134,178,264,196,307,259,287</span>
-                                        Visits: <span class="value">376</span>
-                                    </li>
-                                    <li>
-                                        <span class="inline-sparkline">89,124,197,138,235,169,186</span>
-                                        Unique Visitors: <span class="value">238</span>
-                                    </li>
-                                    <li>
-                                        <span class="inline-sparkline">625,517,586,638,669,698,763</span>
-                                        Page Views: <span class="value">514</span>
-                                    </li>
-                                    <li>
-                                        <span class="inline-sparkline">1.34,2.98,0.76,1.29,1.86,1.68,1.92</span>
-                                        Pages / Visit: <span class="value">1.43</span>
-                                    </li>
-                                    <li>
-                                        <span class="inline-sparkline">2.34,2.67,1.47,1.97,2.25,2.47,1.27</span>
-                                        Avg. Visit Time: <span class="value">00:02:34</span>
-                                    </li>
-                                    <li>
-                                        <span class="inline-sparkline">70.34,67.41,59.45,65.43,78.42,75.92,74.29</span>
-                                        Bounce Rate: <span class="value">73.56%</span>
-                                    </li>
-                                    <li>
-                                        <span class="inline-sparkline">78.12,74.52,81.25,89.23,86.15,91.82,85.18</span>
-                                        % New Visits: <span class="value">82.65%</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-7">
-                        <div class="box box-black">
-                            <div class="box-title">
-                                <h3><i class="fa fa-retweet"></i> Thing To Do</h3>
-                                <div class="box-tool">
-                                    <a data-action="collapse" href="#"><i class="fa fa-chevron-up"></i></a>
-                                    <a data-action="close" href="#"><i class="fa fa-times"></i></a>
-                                </div>
-                            </div>
-                            <div class="box-content">
-                                <ul class="things-to-do">
-                                    <li>
-                                        <p>
-                                            <i class="fa fa-user"></i>
-                                            <span class="value">4</span>
-                                            Accept User Registration
-                                            <a class="btn btn-success" href="#">Go</a>
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <i class="fa fa-comments"></i>
-                                            <span class="value">14</span>
-                                            Review Comments
-                                            <a class="btn btn-success" href="#">Go</a>
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <i class="fa fa-shopping-cart blue"></i>
-                                            <span class="value">7</span>
-                                            Pending Orders
-                                            <a class="btn btn-success" href="#">Go</a>
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <i class="fa fa-file-text-o"></i>
-                                            <span class="value">4</span>
-                                            New Invoice
-                                            <a class="btn btn-success" href="#">Go</a>
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <i class="fa fa-gear"></i>
-                                            <span class="value">3</span>
-                                            Settings To Change
-                                            <a class="btn btn-success" href="#">Go</a>
-                                        </p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-5">
-                        <div class="box box-orange">
-                            <div class="box-title">
-                                <h3><i class="fa fa-bar-chart-o"></i> Weekly Changes</h3>
-                                <div class="box-tool">
-                                    <a data-action="collapse" href="#"><i class="fa fa-chevron-up"></i></a>
-                                    <a data-action="close" href="#"><i class="fa fa-times"></i></a>
-                                </div>
-                            </div>
-                            <div class="box-content">
-                                <ul class="weekly-changes">
-                                    <li>
-                                        <p>
-                                            <i class="fa fa-arrow-up light-green"></i>
-                                            <span class="light-green">186</span>
-                                            New Comments
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <i class="fa fa-minus light-blue"></i>
-                                            <span class="light-blue">53</span>
-                                            New Users
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <i class="fa fa-arrow-down light-red"></i>
-                                            <span class="light-red">17</span>
-                                            New Articles
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <i class="fa fa-arrow-up light-green"></i>
-                                            <span class="light-green">75</span>
-                                            New Tickets
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <i class="fa fa-arrow-down light-red"></i>
-                                            <span class="light-red">74</span>
-                                            New Orders
-                                        </p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-7">
-                        <div class="box box-magenta">
-                            <div class="box-title">
-                                <h3><i class="fa fa-comment"></i> Last Comments</h3>
-                                <div class="box-tool">
-                                    <a data-action="collapse" href="#"><i class="fa fa-chevron-up"></i></a>
-                                    <a data-action="close" href="#"><i class="fa fa-times"></i></a>
-                                </div>
-                            </div>
-                            <div class="box-content">
-                                <ul class="messages slimScroll" style="height: 300px">
-                                    <li>
-                                        <img src="img/demo/avatar/avatar2.jpg" alt="">
-                                        <div>
-                                            <div>
-                                                <h5>David</h5>
-                                                <span class="time"><i class="fa fa-clock-o"></i> 26 minutes ago</span>
-                                            </div>
-                                            <p>Lorem ipsum commodo quis dolor voluptate et in Excepteur. Lorem ipsum amet dolor qui cupidatat in anim reprehenderit quis id culpa consequat non culpa. Lorem ipsum in culpa aliquip incididunt cupidatat dolore irure ...</p>
-                                            <div class="messages-actions">
-                                                <a class="show-tooltip" href="#" title="Approve"><i class="fa fa-check green"></i></a>
-                                                <a class="show-tooltip" href="#" title="Disapprove"><i class="fa fa-times orange"></i></a>
-                                                <a class="show-tooltip" href="#" title="Remove"><i class="fa fa-trash-o red"></i></a>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <img src="img/demo/avatar/avatar3.jpg" alt="">
-                                        <div>
-                                            <div>
-                                                <h5>Sarah</h5>
-                                                <span class="time"><i class="fa fa-clock-o"></i> 1 days ago</span>
-                                            </div>
-                                            <p>Lorem ipsum commodo quis dolor voluptate et in Excepteur. Lorem ipsum amet dolor qui cupidatat in anim reprehenderit quis id culpa consequat non culpa.</p>
-                                            <div class="messages-actions">
-                                                <a class="show-tooltip" href="#" title="Approve"><i class="fa fa-check green"></i></a>
-                                                <a class="show-tooltip" href="#" title="Disapprove"><i class="fa fa-times orange"></i></a>
-                                                <a class="show-tooltip" href="#" title="Remove"><i class="fa fa-trash-o red"></i></a>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <img src="img/demo/avatar/avatar4.jpg" alt="">
-                                        <div>
-                                            <div>
-                                                <h5>Emma</h5>
-                                                <span class="time"><i class="fa fa-clock-o"></i> 4 days ago</span>
-                                            </div>
-                                            <p>Lorem ipsum commodo quis dolor voluptate et in Excepteur. Lorem ipsum amet dolor qui cupidatat in anim reprehenderit quis id culpa consequat non culpa. Lorem ipsum in culpa aliquip incididunt cupidatat dolore irure cupidatat aute cupidatat quis nulla.</p>
-                                            <div class="messages-actions">
-                                                <a class="show-tooltip" href="#" title="Approve"><i class="fa fa-check green"></i></a>
-                                                <a class="show-tooltip" href="#" title="Disapprove"><i class="fa fa-times orange"></i></a>
-                                                <a class="show-tooltip" href="#" title="Remove"><i class="fa fa-trash-o red"></i></a>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <img src="img/demo/avatar/avatar5.jpg" alt="">
-                                        <div>
-                                            <div>
-                                                <h5>John</h5>
-                                                <span class="time"><i class="fa fa-clock-o"></i> 2 weeks ago</span>
-                                            </div>
-                                            <p>Lorem ipsum commodo quis dolor voluptate et in Excepteur. Lorem ipsum amet dolor qui cupidatat in anim reprehenderit quis id culpa consequat non culpa. Lorem...</p>
-                                            <div class="messages-actions">
-                                                <a class="show-tooltip" href="#" title="Approve"><i class="fa fa-check green"></i></a>
-                                                <a class="show-tooltip" href="#" title="Disapprove"><i class="fa fa-times orange"></i></a>
-                                                <a class="show-tooltip" href="#" title="Remove"><i class="fa fa-trash-o red"></i></a>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <img src="img/demo/avatar/avatar1.jpg" alt="">
-                                        <div>
-                                            <div>
-                                                <h5>Penny <span class="label label-info">Admin</span></h5>
-                                                <span class="time"><i class="fa fa-clock-o"></i> 14 July</span>
-                                            </div>
-                                            <p>Lorem ipsum commodo quis dolor voluptate et in Excepteur. Lorem ipsum amet dolor qui cupidatat in anim reprehenderit quis id culpa consequat non culpa. Lorem ipsum in culpa aliquip incididunt cupidatat dolore irure cupidatat aute cupidatat quis nulla.</p>
-                                            <div class="messages-actions">
-                                                <a class="show-tooltip" href="#" title="Approve"><i class="fa fa-check green"></i></a>
-                                                <a class="show-tooltip" href="#" title="Disapprove"><i class="fa fa-times orange"></i></a>
-                                                <a class="show-tooltip" href="#" title="Remove"><i class="fa fa-trash-o red"></i></a>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-5">
-                        <div class="box box-red">
-                            <div class="box-title">
-                                <h3><i class="fa fa-tasks"></i> Tasks In Progress</h3>
-                                <div class="box-tool">
-                                    <a data-action="collapse" href="#"><i class="fa fa-chevron-up"></i></a>
-                                    <a data-action="close" href="#"><i class="fa fa-times"></i></a>
-                                </div>
-                            </div>
-                            <div class="box-content">
-                                <ul class="tasks-in-progress">
-                                    <li>
-                                        <p>
-                                            Backend Development
-                                            <span>45%</span>
-                                        </p>
-                                        <div class="progress progress-mini">
-                                            <div class="progress-bar progress-bar-warning" style="width:45%"></div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            Some Optimization On JS Code
-                                            <span>63%</span>
-                                        </p>
-                                        <div class="progress progress-mini">
-                                            <div class="progress-bar" style="width:63%"></div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            Writing Documentation
-                                            <span>30%</span>
-                                        </p>
-                                        <div class="progress progress-mini">
-                                            <div class="progress-bar progress-bar-danger" style="width:30%"></div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            Android App Development
-                                            <span>80%</span>
-                                        </p>
-                                        <div class="progress progress-mini">
-                                            <div class="progress-bar progress-bar-success" style="width:80%"></div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            Marketing
-                                            <span>35%</span>
-                                        </p>
-                                        <div class="progress progress-mini progress-striped">
-                                            <div class="progress-bar" style="width:35%"></div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            iOS App Developement
-                                            <span>55%</span>
-                                        </p>
-                                        <div class="progress progress-mini progress-striped">
-                                            <div class="progress-bar progress-bar-warning" style="width:55%"></div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-7">
-                        <div class="box box-pink">
-                            <div class="box-title">
-                                <h3><i class="fa fa-comments"></i> Chat</h3>
-                                <div class="box-tool">
-                                    <a data-action="collapse" href="#"><i class="fa fa-chevron-up"></i></a>
-                                    <a data-action="close" href="#"><i class="fa fa-times"></i></a>
-                                </div>
-                            </div>
-                            <div class="box-content">
-                                <ul class="messages messages-chat messages-stripped messages-zigzag slimScroll" style="height:250px">
-                                    <li>
-                                        <img src="img/demo/avatar/avatar1.jpg" alt="">
-                                        <div>
-                                            <div>
-                                                <h5>Penny</h5>
-                                                <span class="time"><i class="fa fa-clock-o"></i> 2 minutes ago</span>
-                                            </div>
-                                            <p>hey Sarah</p>
-                                            <p>how R U?</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <img src="img/demo/avatar/avatar3.jpg" alt="">
-                                        <div>
-                                            <div>
-                                                <h5>Sarah</h5>
-                                                <span class="time"><i class="fa fa-clock-o"></i> 1 minutes ago</span>
-                                            </div>
-                                            <p>Hi Penny</p>
-                                            <p>Thanks, how are you ?</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <img src="img/demo/avatar/avatar1.jpg" alt="">
-                                        <div>
-                                            <div>
-                                                <h5>Penny</h5>
-                                                <span class="time"><i class="fa fa-clock-o"></i> 47 seconds ago</span>
-                                            </div>
-                                            <p>ey, I'm good</p>
-                                            <p>what's up?</p>
-                                            <p>what's your plan for dinner?</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <img src="img/demo/avatar/avatar3.jpg" alt="">
-                                        <div>
-                                            <div>
-                                                <h5>Sarah</h5>
-                                                <span class="time"><i class="fa fa-clock-o"></i> 12 seconds ago</span>
-                                            </div>
-                                            <p>Not much</p>
-                                            <p>I haven't any plan, why ?</p>
-                                        </div>
-                                    </li>
-                                </ul>
-
-                                <div class="messages-input-form">
-                                    <form method="POST" action="#">
-                                        <div class="input">
-                                            <input type="text" name="text" placeholder="Write here..." class="form-control">
-                                        </div>
-                                        <div class="buttons">
-                                            <a class="show-tooltip" href="#" title="Take Picture"><i class="fa fa-camera"></i></a>
-                                            <a class="show-tooltip" href="#" title="Attach File"><i class="fa fa-paperclip"></i></a>
-                                            <button type="submit" class="btn btn-primary"><i class="fa fa-share"></i></button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-5">
-                        <div class="box box-green">
-                            <div class="box-title">
-                                <h3><i class="fa fa-check"></i> Todo List</h3>
-                                <div class="box-tool">
-                                    <a data-action="collapse" href="#"><i class="fa fa-chevron-up"></i></a>
-                                    <a data-action="close" href="#"><i class="fa fa-times"></i></a>
-                                </div>
-                            </div>
-                            <div class="box-content">
-                                <ul class="todo-list">
-                                    <li>
-                                        <div class="todo-desc">
-                                            <p><a href="#">Fix some bugs</a></p>
-                                        </div>
-                                        <div class="todo-actions">
-                                            <span class="label label-important">Today</span>
-                                            <a class="show-tooltip" href="#" title="It's done"><i class="fa fa-check"></i></a>
-                                            <a class="show-tooltip" href="#" title="Remove"><i class="fa fa-times"></i></a>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="todo-desc">
-                                            <p>Add new product's description post</p>
-                                        </div>
-                                        <div class="todo-actions">
-                                            <span class="label label-important">Today</span>
-                                            <a class="show-tooltip" href="#" title="It's done"><i class="fa fa-check"></i></a>
-                                            <a class="show-tooltip" href="#" title="Remove"><i class="fa fa-times"></i></a>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="todo-desc">
-                                            <p><a href="#">Remove some posts</a></p>
-                                        </div>
-                                        <div class="todo-actions">
-                                            <span class="label label-warning">Tommorow</span>
-                                            <a class="show-tooltip" href="#" title="It's done"><i class="fa fa-check"></i></a>
-                                            <a class="show-tooltip" href="#" title="Remove"><i class="fa fa-times"></i></a>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="todo-desc">
-                                            <p>Shedule backups</p>
-                                        </div>
-                                        <div class="todo-actions">
-                                            <span class="label label-success">This week</span>
-                                            <a class="show-tooltip" href="#" title="It's done"><i class="fa fa-check"></i></a>
-                                            <a class="show-tooltip" href="#" title="Remove"><i class="fa fa-times"></i></a>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="todo-desc">
-                                            <p>Weekly sell report</p>
-                                        </div>
-                                        <div class="todo-actions">
-                                            <span class="label label-success">This week</span>
-                                            <a class="show-tooltip" href="#" title="It's done"><i class="fa fa-check"></i></a>
-                                            <a class="show-tooltip" href="#" title="Remove"><i class="fa fa-times"></i></a>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="todo-desc">
-                                            <p><a href="#">Hire developers</a></p>
-                                        </div>
-                                        <div class="todo-actions">
-                                            <span class="label label-info">Next week</span>
-                                            <a class="show-tooltip" href="#" title="It's done"><i class="fa fa-check"></i></a>
-                                            <a class="show-tooltip" href="#" title="Remove"><i class="fa fa-times"></i></a>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="todo-desc">
-                                            <p><a href="#">New frontend design</a></p>
-                                        </div>
-                                        <div class="todo-actions">
-                                            <span class="label label-info">Next week</span>
-                                            <a class="show-tooltip" href="#" title="It's done"><i class="fa fa-check"></i></a>
-                                            <a class="show-tooltip" href="#" title="Remove"><i class="fa fa-times"></i></a>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- END Main Content -->
-                
-                <footer>
-                    <p>2015 © FLATY Admin Template.</p>
-                </footer>
-
-                <a id="btn-scrollup" class="btn btn-circle btn-lg" href="#"><i class="fa fa-chevron-up"></i></a>
+            <div class="col-md-3 box_2">
+                <h4>Contact Us</h4>
+                <address class="address">
+                  <dl>
+                     <dt></dt>
+                     <dd>Address : <span>3598 But I must explain to you how all this mistaken</span></dd>
+                     <dd>E-mail : <a href="mailto@example.com">info(at)hosting.com</a></dd>
+                     <dd>Call : <span> +1 800 547 5478</span></dd>
+                  </dl>
+               </address>
             </div>
-            <!-- END Content -->
+            <div class="col-md-3 box_2">
+                <h4>Social Media</h4>
+                <ul class="footer_social">
+                  <li><a href=""> <i class="fb"> </i> </a></li>
+                  <li><a href=""><i class="tw"> </i> </a></li>
+                  <li><a href=""><i class="linkedin"> </i> </a></li>
+                  <li><a href=""><i class="google"> </i> </a></li>
+               </ul>
+            </div>
         </div>
-        <!-- END Container -->
-
-
-        <!--basic scripts-->
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="assets/jquery/jquery-2.1.4.min.js"><\/script>')</script>
-        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-        <script src="assets/jquery-slimscroll/jquery.slimscroll.min.js"></script>
-        <script src="assets/jquery-cookie/jquery.cookie.js"></script>
-
-        <!--page specific plugin scripts-->
-        <script src="assets/flot/jquery.flot.js"></script>
-        <script src="assets/flot/jquery.flot.resize.js"></script>
-        <script src="assets/flot/jquery.flot.pie.js"></script>
-        <script src="assets/flot/jquery.flot.stack.js"></script>
-        <script src="assets/flot/jquery.flot.crosshair.js"></script>
-        <script src="assets/flot/jquery.flot.tooltip.min.js"></script>
-        <script src="assets/sparkline/jquery.sparkline.min.js"></script>
-
-        <!--flaty scripts-->
-        <script src="js/flaty.js"></script>
-        <script src="js/flaty-demo-codes.js"></script>
-
-    </body>
+    </div>
+    <link href="css/flexslider.css" rel='stylesheet' type='text/css' />
+        <script defer src="js/jquery.flexslider.js"></script>
+        <script type="text/javascript">
+            $(function(){
+                SyntaxHighlighter.all();
+            });
+            $(window).load(function(){
+                $('.flexslider').flexslider({
+                    animation: "slide",
+                    start: function(slider){
+                        $('body').removeClass('loading');
+                    }
+                });
+            });
+        </script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
 </html>
+
