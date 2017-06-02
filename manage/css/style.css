@@ -219,3 +219,54 @@
 .renew {
 	margin-left: 20px;
 }
+
+.gambar{
+  text-align: center;
+}
+
+#main-content {
+	min-height: 94vh;
+	padding-bottom: 44px; 
+	position: relative;
+}
+
+footer {
+	height:44px;
+	width: 100%;
+	position: absolute;
+	top : auto;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin : auto;
+}
+
+.big-tile {
+	height: 370px;
+	display: block;
+	position: absolute;
+	/*height: 120px;*/
+	padding: 10px;
+	margin-bottom: 20px;
+	color: #fff;
+	overflow: hidden;
+
+}
+
+.big-tile .img .img-center{
+	top: 0;
+	left: 0;
+	margin: auto;
+	right: 0;
+	width: 128px;
+	bottom: 0;
+	height: 128px;
+
+}
+
+.big-tile .img .img-center img{
+	margin: auto;
+	height: 128px;
+	width : 128px;
+
+}
