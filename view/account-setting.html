@@ -13,7 +13,9 @@
         <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
 
+        
         <!--page specific css styles-->
+        <link rel="stylesheet" href="assets/data-tables/bootstrap3/dataTables.bootstrap.css" />
 
         <!--flaty css styles-->
         <link rel="stylesheet" href="css/flaty.css">
@@ -284,14 +286,14 @@
             <div id="sidebar" class="navbar-collapse collapse">
                 <!-- BEGIN Navlist -->
                 <ul class="nav nav-list">
-                    <li>
+                    <li class="active">
                         <a href="index.html">
                             <i class="fa fa-dashboard"></i>
                             <span>Dashboard</span>
                         </a>
                     </li>
 
-                    <li class="active">
+                    <li>
                         <a href="mysite.html">
                             <i class="fa fa-desktop"></i>
                             <span>My Site</span>
@@ -311,7 +313,6 @@
                             <i class="fa fa-shopping-cart"></i>
                             <span>Store</span>
                         </a>
-
                     </li>
 
                     <li>
@@ -319,7 +320,6 @@
                             <i class="fa fa-lightbulb-o"></i>
                             <span>Knowledgebase</span>
                         </a>
-
                     </li>
 
                     <li>
@@ -327,9 +327,8 @@
                             <i class="fa fa-bullhorn"></i>
                             <span>Announcement</span>
                         </a>
-
                     </li>
-                    
+
                      <li>
                         <a href="support.html">
                             <i class="fa fa-globe"></i>
@@ -352,89 +351,50 @@
                 <!-- BEGIN Page Title -->
                 <div class="page-title">
                     <div>
-                        <h1><i class="fa fa-laptop"></i> MY SITE</h1>
+                        <h1><i class="fa fa-cog"></i> Account Setting</h1>
                     </div>
                 </div>
                 <!-- END Page Title -->
-
-                <!-- BEGIN Breadcrumb -->
-                <div id="breadcrumbs">
-                    <ul class="breadcrumb">
-                        <li>
-                            <i class="fa fa-home"></i>
-                            <a href="index.html">Home</a>
-                            <span class="divider"><i class="fa fa-angle-right"></i></span>
-                        </li>
-                        <li class="active">My Site</li>
-                    </ul>
-                </div>
-                <!-- END Breadcrumb -->
-
-                <!-- BEGIN Main Content -->
-                <div class="row">
-                    <div class="panel">
-                        <div class="panel-body">
-                            <div class="current-balance">
-                                <div class="box">
-                                    <div class="box-title no-bg">
-                                        <div class="box"><a class="btn btn-success btn-lg"><i class="glyphicon glyphicon-plus"></i> Create Site</a></div>
-                                        <div class="box-tool">
-                                            <div class="box">Credit Balance: <span> Rp. 667 </span> <a class="btn btn-warning btn-lg"><i class="glyphicon glyphicon-ok"></i> Add </a></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-10">
-                                <div class="box">
-                                    <div class="row">
-                                        <div class="col-md-3">
-                                            <img class="img-responsive img-thumbnail" src="img/demo/profile-picture.jpg" alt="profile picture" />
-                                        </div>
-                                        <div class="col-md-9">
-                                            <h3><strong>Sub Domain</strong></h3>
-                                            <br/>
-                                            <p><span>Address :</span> subdomain.voucher.co.id</p>
-                                            <p><span>Package :</span> Basic</p>
-                                            <br/>
-                                            <p><a class="btn" href="//localhost/smartmedia-client/manage/index.html">Manage Site</a></p>
-                                        </div>
-                                    </div>
-                                    <hr/>
-                                    <div class="row">
-                                        <div class="col-md-3">
-                                            <img class="img-responsive img-thumbnail" src="img/demo/profile-picture.jpg" alt="profile picture" />
-                                        </div>
-                                        <div class="col-md-9">
-                                            <h3><strong>My Site</strong></h3>
-                                            <br/>
-                                            <p><span>Address :</span> mysite.voucher.co.id</p>
-                                            <p><span>Package :</span> Starter</p>
-                                            <br/>
-                                            <p><a class="btn" href="//localhost/smartmedia-client/manage/index.html">Manage Site</a></p>
-                                        </div>
-                                    </div>
-                                    <hr/>
-                                    <div class="row">
-                                        <div class="col-md-3">
-                                            <img class="img-responsive img-thumbnail" src="img/demo/profile-picture.jpg" alt="profile picture" />
-                                        </div>
-                                        <div class="col-md-9">
-                                            <h3><strong>Sub Domain</strong></h3>
-                                            <br/>
-                                            <p><span>Address :</span> Jack</p>
-                                            <p><span>Package :</span> Brown</p>
-                                            <br/>
-                                            <p><a class="btn" href="//localhost/smartmedia-client/manage/index.html">Manage Site</a></p>
-                                        </div>
-                                    </div>
-                                    <hr/>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+				
+				<!-- BEGIN Form -->
+				<div class="container">
+					<div class="col sm-9">
+					<form class="form-horizontal">
+							<div class="form-group">
+								<label for="inputexitingpassword" class="col-sm-2 control-label">Exiting Password</label>
+									<div class="col-sm-7">
+										<input type="password" class="form-control" placeholder>
+									</div>
+							</div>
+							<div class="form-group">
+								<label for="inputnewpassword" class="col-sm-2 control-label">New Password</label>
+									<div class="col-sm-7">
+										<!--<input type="text" class="form-control" placeholder>-->
+										<input type="password" id="password" class="form-control" placeholder="Password" autofocus>
+									</div>
+							</div>
+							<div class="form-group">
+								<label for="inputconfirmpassword" class="col-sm-2 control-label">Confirm New Password</label>
+									<div class="col-sm-7">
+										<input type="password" class="form-control" placeholder="Confirm Password">
+									</div>
+							</div>	
+							<div class="form-group">
+								<div class="col-sm-2"></div>
+								<div class="col-sm-7">
+									<div class="progress progress-striped active">
+									  <div id="jak_pstrength" class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+									</div>
+								</div>
+							</div>	
+							<a class="btn btn-success btn-save2 btn-lg ">Save Changes</a>
+					</form>
+					</div>	
+				</div>
+				<!-- END Form -->
+                    
                 <!-- END Main Content -->
-                
+
                 <footer>
                     <p>2017 © Andrian Smart Media</p>
                 </footer>
@@ -454,17 +414,36 @@
         <script src="assets/jquery-cookie/jquery.cookie.js"></script>
 
         <!--page specific plugin scripts-->
-        <script src="assets/flot/jquery.flot.js"></script>
-        <script src="assets/flot/jquery.flot.resize.js"></script>
-        <script src="assets/flot/jquery.flot.pie.js"></script>
-        <script src="assets/flot/jquery.flot.stack.js"></script>
-        <script src="assets/flot/jquery.flot.crosshair.js"></script>
-        <script src="assets/flot/jquery.flot.tooltip.min.js"></script>
-        <script src="assets/sparkline/jquery.sparkline.min.js"></script>
+        <script type="text/javascript" src="assets/data-tables/jquery.dataTables.js"></script>
+        <script type="text/javascript" src="assets/data-tables/bootstrap3/dataTables.bootstrap.js"></script>
 
         <!--flaty scripts-->
         <script src="js/flaty.js"></script>
         <script src="js/flaty-demo-codes.js"></script>
+		<script type="text/javascript">
+            $(document).ready( function() {
+              $('#invoice-table').dataTable( {
+                "aoColumnDefs": [
+                  { "bSortable": true, "aTargets": [ 6 ] }
+                ] } );
 
+              $('#ticket-table').dataTable( {
+                "aoColumnDefs": [
+                  { "bSortable": true, "aTargets": [ 5 ] }
+                ] } );
+            });
+        </script>
+		
+		<!-- password strength-->
+		<script src="js/jquery.js"></script>
+		<script src="js/jaktutorial.js"></script>
+		<script type="text/javascript">
+		jQuery(document).ready(function(){
+			jQuery("#password").keyup(function() {
+			  passwordStrength(jQuery(this).val());
+			});
+		});
+		</script>
+		
     </body>
 </html>
