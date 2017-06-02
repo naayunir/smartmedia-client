@@ -399,16 +399,15 @@
                 
 
                 <div class="box">
-                            
-                    <div class="table-responsive  my-invoice-table">
-                        <table class="table table-advance">
+                    <div>
+                        <table class="table table-advance" id="invoice-table">
                             <thead class="table-flag-blue">
                                 <tr>
-                                    <th><a class="sort-asc sort-desc" href="#">Invoice #</a></th>
-                                    <th><a class="sort-asc sort-desc" href="#">Invoice Date</a></th>
-                                    <th><a class="sort-asc sort-desc" href="#">Due Date</a></th>
-                                    <th><a class="sort-asc sort-desc" href="#">Total</a></th>
-                                    <th colspan="2"><a class="sort-asc sort-desc" href="#">Status</a></th>
+                                    <th>Invoice #</th>
+                                    <th>Invoice Date</th>
+                                    <th>Due Date</th>
+                                    <th>Total</th>
+                                    <th colspan="2">Status</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -418,7 +417,7 @@
                                     <td>21/08/2015</td>
                                     <td> Rp. 280.983,00</td>
                                     <td><span class="label label-large label-lime">Paid</span></td>
-                                    <td><a href="#" class="btn btn-info"><i class="fa fa-tasks"></i> View Invoice</a><a href="#" class="btn btn-lime"><i class="fa fa-check"></i> Payment Confirmation</a></td>
+                                    <td><a class="btn btn-info"><i class="fa fa-tasks"></i> View Invoice</a></td>
                                 </tr>
                                 <tr>                               
                                     <td><a href="">495868</a></td>
@@ -426,7 +425,7 @@
                                     <td>23/03/2017</td>
                                     <td>Rp. 159.945,00</td>
                                     <td><span class="label label-large label-gray">Canceled</span></td>
-                                    <td><a href="#" class="btn btn-info"><i class="fa fa-tasks"></i> View Invoice</a><a href="#" class="btn btn-lime"><i class="fa fa-check"></i> Payment Confirmation</a></td>
+                                    <td><a class="btn btn-info"><i class="fa fa-tasks"></i> View Invoice</a></td>
                                 </tr>
 
                                 <tr>                               
@@ -434,8 +433,9 @@
                                     <td>12/04/2017</td>
                                     <td>17/04/2017</td>
                                     <td> Rp. 200.565,00</td>
-                                    <td><span class="label label-large label-lime">Paid</span></td>
-                                    <td><a href="#" class="btn btn-info"><i class="fa fa-tasks"></i> View Invoice</a><a href="#" class="btn btn-lime"><i class="fa fa-check"></i> Payment Confirmation</a></td>
+                                    <td><span class="label label-large label-warning">Unpaid</span></td>
+                                    <td><a href="#" class="btn btn-info"><i class="fa fa-tasks"></i> View Invoice</a>
+                                     <a href="#" class="btn btn-lime" data-toggle="modal" data-target="#confirm"><i class="fa fa-check"></i> Confirm Payment</a></td>
                                 </tr>
 
                                  <tr>                               
@@ -443,19 +443,14 @@
                                     <td>5/05/2017</td>
                                     <td>12/05/2017</td>
                                     <td> Rp. 235.348,00</td>
-                                    <td><span class="label label-large label-gray">Canceled</span></td>
-                                    <td><a href="#" class="btn btn-info"><i class="fa fa-tasks"></i> View Invoice</a><a href="#" class="btn btn-lime"><i class="fa fa-check"></i> Payment Confirmation</a></td>
+                                    <td><span class="label label-large label-danger">Unpaid</span></td>
+                                    <td><a class="btn btn-info" data-toggle="modal" data-target="#confirm"><i class="fa fa-tasks"></i> View Invoice</a>
+                                     <a href="#" class="btn btn-lime" data-toggle="modal" data-target="#confirm"><i class="fa fa-check"></i> Confirm Payment</a></td>
                                 </tr>
                               
                             </tbody>
                         </table>
                     </div>
-
-                    <p class="text-right">
-                        1-12 of 46
-                        <a class="btn btn-circle disabled" href="#"><i class="fa fa-angle-left"></i></a>
-                        <a class="btn btn-circle" href="#"><i class="fa fa-angle-right"></i></a>
-                    </p>
                 </div>
                 <!-- END Main Content -->
                 
@@ -469,6 +464,58 @@
         </div>
         <!-- END Container -->
 
+        <!-- Modal -->
+        <div class="modal fade modal-white" id="confirm" tabindex="-1" role="dialog" aria-labelledby="modal-confirm-payment">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content infotrophy-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="modal-confirm-payment">Confirm Payment #503565</h4>
+                    </div>
+                    <div class="modal-body"> 
+                    <form class="form-horizontal">
+                            <div class="form-group">
+                                <label for="sitedesc" class="col-sm-5 col-lg-4 control-label">Date of Payment</label>
+                                <div class="col-sm-7 col-lg-6 controls">
+                                    <div class="input-group date date-picker" data-date="12-0-2017" data-date-format="dd-mm-yyyy" data-date-viewmode="years">
+                                            <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                            <input class="form-control date-picker" size="16" type="text" value="12-05-2017" name="date" id="date-payment">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="sitedesc" class="col-sm-5 col-lg-4 control-label">Account Name</label>
+                                <div class="col-sm-7 col-lg-6 controls">
+                                    <input type="text" name="name" id="name-payment" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="sitedesc" class="col-sm-5 col-lg-4 control-label">Account Number</label>
+                                <div class="col-sm-7 col-lg-6 controls">
+                                    <input type="tel" name="number" id="number-payment" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="sitedesc" class="col-sm-5 col-lg-4 control-label">Bank Name</label>
+                                <div class="col-sm-7 col-lg-6 controls">
+                                    <input type="text" name="bank" id="bank-payment" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="sitedesc" class="col-sm-5 col-lg-4 control-label">Additional Information</label>
+                                <div class="col-sm-7 col-lg-6 controls">
+                                    <textarea class="form-control" name="info" id="info-payment"></textarea>
+                                </div>
+                            </div>             
+                    </form>
+                    </div>
+                  <!-- end modal-body -->
+                    <div class="modal-footer">
+                        <button class="btn" data-dismiss="modal">Confirm</button>
+                    </div>
+                </div>
+                <!-- end modal-content -->
+            </div>
+                </div>
 
         <!--basic scripts-->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -486,5 +533,13 @@
         <script src="js/flaty.js"></script>
         <script src="js/flaty-demo-codes.js"></script>
 
+        <script type="text/javascript">
+            $(document).ready( function() {
+              $('#invoice-table').dataTable( {
+                "aoColumnDefs": [
+                  { "bSortable": true, "aTargets": [ 5 ] }
+                ] } );
+            });
+        </script>
     </body>
 </html>
