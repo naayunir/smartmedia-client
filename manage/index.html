@@ -361,12 +361,21 @@
                             </div>
                             <div class="modal-body">                            
                                 <div class="row">
-                                    <label class="col-sm-4 control-label">Site Name</label>
-                                    <label class="col-sm-6">Basics Site XYZ</label>
+                                    <div class="form-group">
+                                        <label for="sitedesc" class="col-sm-5 col-lg-4 control-label">Site Name</label>
+                                        <div class="col-sm-7 col-lg-6 controls">
+                                            <input type="text" name="sitename" id="sitename" class="form-control">
+                                        </div>
+                                    </div>
                                 </div>
+                                <br/>
                                 <div class="row">
-                                    <label class="col-sm-4 control-label">Site Description</label>
-                                    <label class="col-sm-6">This site is one of basics site that already regostered.</label>
+                                    <div class="form-group">
+                                        <label for="sitedesc" class="col-sm-5 col-lg-4 control-label">Site Description</label>
+                                        <div class="col-sm-7 col-lg-6 controls">
+                                            <input type="text" name="sitedesc" id="sitedesc" class="form-control">
+                                        </div>
+                                    </div>
                                 </div>                 
                             </div>
                           <!-- end modal-body -->
@@ -379,21 +388,23 @@
                 </div>
 
                 <div class="row">
-                    <div class="box">
-                        <div class="box-content">
-                            <div class="col-md-4">
-                                <h3><span>Action</span></h3>
-                            </div>
-                            <div class="col-md-4 col-md-offset-4">
-                                <div class="col-md-3">
-                                    <span><a href=""> View </a></span>
+                    <div class="col-md-12">
+                        <div class="panel">
+                            <div class="panel-body">
+                                <div class="col-md-4">
+                                    <h3><span>Action</span></h3>
                                 </div>
-                                <div class="col-md-3">
-                                    <span><a href=""> Edit </a></span>
+                                <div class="col-md-4 col-md-offset-4">
+                                    <div class="col-md-3">
+                                        <span><a href=""> View </a></span>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <span><a href=""> Edit </a></span>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <span><a href=""> Delete </a></span>
+                                    </div>       
                                 </div>
-                                <div class="col-md-3">
-                                    <span><a href=""> Delete </a></span>
-                                </div>       
                             </div>
                         </div>
                     </div>
@@ -446,56 +457,53 @@
                                 <h3> Package</h3>
                             </div>
                             <div class="box-content">
-                                <div class="col-md-3">
-                                    <a href="img/demo/gallery/1.jpg">
-                                        <div>
-                                            <img src="img/demo/avatar/avatar.png" width="150px" height="200px" />
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="col-md-3">
+                                            <div class="tile tile-red">
+                                                <div class="img img-center">
+                                                    <i class="fa fa-user"></i>
+                                                </div>
+                                                <p class="title text-center">BASIC</p>
+                                            </div>
+                                            <p>
+                                                <button class="btn-block btn btn-lg">Upgrade</button>
+                                            </p>
                                         </div>
-                                    </a>
-                                    <div class="gallery-tools">
-                                        <a href="#"><i class="fa fa-link"></i></a>
-                                        <a href="#"><i class="fa fa-paperclip"></i></a>
-                                        <a href="#"><i class="fa fa-pencil"></i></a>
-                                        <a href="#"><i class="fa fa-trash-o"></i></a>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <a href="img/demo/gallery/1.jpg">
-                                        <div>
-                                            <img src="img/demo/gallery/1_thumb.jpg" alt="" />
+                                        <div class="col-md-3">
+                                            <div class="tile tile-blue text-center">
+                                                <div class="content">
+                                                    <p class="big">30 Days</p>
+                                                    <p class="title">Active Periode</p>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                <button class="btn-block btn btn-lg">Extend</button>
+                                            </p>
                                         </div>
-                                    </a>
-                                    <div class="gallery-tools">
-                                        <a href="#"><i class="fa fa-link"></i></a>
-                                        <a href="#"><i class="fa fa-paperclip"></i></a>
-                                        <a href="#"><i class="fa fa-pencil"></i></a>
-                                        <a href="#"><i class="fa fa-trash-o"></i></a>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <a href="img/demo/gallery/1.jpg">
-                                        <div>
-                                            <img src="img/demo/gallery/1_thumb.jpg" alt="" />
+                                        <div class="col-md-3">
+                                            <div class="tile tile-green text-center">
+                                                <div class="content text-center">
+                                                    
+                                                </div>
+                                                <p class="title text-center">200 MB from 2GB</p>
+                                                <p class="title text-center">Bandwith</p>
+                                            </div>
+                                            <p>
+                                                <button class="btn-block btn btn-lg">Upgrade</button>
+                                            </p>
                                         </div>
-                                    </a>
-                                    <div class="gallery-tools">
-                                        <a href="#"><i class="fa fa-link"></i></a>
-                                        <a href="#"><i class="fa fa-paperclip"></i></a>
-                                        <a href="#"><i class="fa fa-pencil"></i></a>
-                                        <a href="#"><i class="fa fa-trash-o"></i></a>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <a href="img/demo/gallery/1.jpg">
-                                        <div>
-                                            <img src="img/demo/gallery/1_thumb.jpg" alt="" />
+                                        <div class="col-md-3">
+                                            <div class="tile tile-yellow text-center">
+                                                <div class="content">
+                                                </div>
+                                                <p class="title text-center">200MB from 2GB</p>
+                                                <p class="title text-center">Storage</p>
+                                            </div>
+                                            <p>
+                                                <button class="btn-block btn btn-lg">Upgrade</button>
+                                            </p>
                                         </div>
-                                    </a>
-                                    <div class="gallery-tools">
-                                        <a href="#"><i class="fa fa-link"></i></a>
-                                        <a href="#"><i class="fa fa-paperclip"></i></a>
-                                        <a href="#"><i class="fa fa-pencil"></i></a>
-                                        <a href="#"><i class="fa fa-trash-o"></i></a>
                                     </div>
                                 </div>
                             </div>

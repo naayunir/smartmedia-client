@@ -219,3 +219,43 @@
 .renew {
 	margin-left: 20px;
 }
+
+
+
+a.order-btn:hover{
+  color:#ffe13e;
+}
+.pricing-table-grid:hover a.order-btn{
+  background:#445c7f;
+}
+
+.distance{
+    padding-left: 15px;
+}
+
+.distance2{
+    text-align: center;
+    padding-top: 135px;
+}
+
+.distance3{
+    padding-top: 30px;
+    padding-right: 30px;
+}
+
+.mail-msg-header .msg-distance {
+    right: 20px;
+}
+
+.box_random{
+  width: 150px;
+  height: 75px;
+  padding-right: 10px;
+    border: solid 1px;
+    border-color: red;
+    font-color: solid red;
+}
+
+.gambar{
+  margin-left: 25%; 
+}
