@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Dashboard - Client Area</title>
+        <title>Gallery - FLATY Admin</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -13,14 +13,13 @@
         <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
 
-        
         <!--page specific css styles-->
-        <link rel="stylesheet" href="assets/data-tables/bootstrap3/dataTables.bootstrap.css" />
+        <link rel="stylesheet" href="assets/prettyPhoto/css/prettyPhoto.css">
+        <link rel="stylesheet" type="text/css" href="assets/chosen-bootstrap/chosen.min.css" />
 
         <!--flaty css styles-->
         <link rel="stylesheet" href="css/flaty.css">
         <link rel="stylesheet" href="css/flaty-responsive.css">
-        <link rel="stylesheet" href="css/style.css">
 
         <link rel="shortcut icon" href="img/favicon.png">
     </head>
@@ -88,13 +87,87 @@
             </button>
             <a class="navbar-brand" href="#">
                 <small>
-                    <i class="fa fa-html5"></i>
-                    SMART MEDIA
+                    <i class="fa fa-desktop"></i>
+                    FLATY Admin
                 </small>
             </a>
 
             <!-- BEGIN Navbar Buttons -->
             <ul class="nav flaty-nav pull-right">
+                <!-- BEGIN Button Tasks -->
+                <li class="hidden-xs">
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                        <i class="fa fa-tasks"></i>
+                        <span class="badge badge-warning">4</span>
+                    </a>
+
+                    <!-- BEGIN Tasks Dropdown -->
+                    <ul class="dropdown-navbar dropdown-menu">
+                        <li class="nav-header">
+                            <i class="fa fa-check"></i>
+                            4 Tasks to complete
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <div class="clearfix">
+                                    <span class="pull-left">Software Update</span>
+                                    <span class="pull-right">75%</span>
+                                </div>
+
+                                <div class="progress progress-mini">
+                                    <div style="width:75%" class="progress-bar progress-bar-warning"></div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <div class="clearfix">
+                                    <span class="pull-left">Transfer To New Server</span>
+                                    <span class="pull-right">45%</span>
+                                </div>
+
+                                <div class="progress progress-mini">
+                                    <div style="width:45%" class="progress-bar progress-bar-danger"></div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <div class="clearfix">
+                                    <span class="pull-left">Bug Fixes</span>
+                                    <span class="pull-right">20%</span>
+                                </div>
+
+                                <div class="progress progress-mini">
+                                    <div style="width:20%" class="progress-bar"></div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <div class="clearfix">
+                                    <span class="pull-left">Writing Documentation</span>
+                                    <span class="pull-right">85%</span>
+                                </div>
+
+                                <div class="progress progress-mini progress-striped active">
+                                    <div style="width:85%" class="progress-bar progress-bar-success"></div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="more">
+                            <a href="#">See tasks with details</a>
+                        </li>
+                    </ul>
+                    <!-- END Tasks Dropdown -->
+                </li>
+                <!-- END Button Tasks -->
+
                 <!-- BEGIN Button Notifications -->
                 <li class="hidden-xs">
                     <a data-toggle="dropdown" class="dropdown-toggle" href="#">
@@ -111,26 +184,44 @@
 
                         <li class="notify">
                             <a href="#">
-                                <i class="fa fa-bullhorn orange"></i>
-                                <p>Maintenance Announcement</p>
-                                <span class="badge badge-warning">1</span>
+                                <i class="fa fa-comment orange"></i>
+                                <p>New Comments</p>
+                                <span class="badge badge-warning">4</span>
                             </a>
                         </li>
 
                         <li class="notify">
                             <a href="#">
-                                <i class="fa fa-clock-o blue"></i>
-                                <p>Site Expire Notice</p>
-                                <span class="badge badge-info">1</span>
+                                <i class="fa fa-twitter blue"></i>
+                                <p>New Twitter followers</p>
+                                <span class="badge badge-info">7</span>
+                            </a>
+                        </li>
+
+                        <li class="notify">
+                            <a href="#">
+                                <img src="img/demo/avatar/avatar2.jpg" alt="Alex" />
+                                <p>David would like to become moderator.</p>
+                            </a>
+                        </li>
+
+                        <li class="notify">
+                            <a href="#">
+                                <i class="fa fa-bug pink"></i>
+                                <p>New bug in program!</p>
                             </a>
                         </li>
 
                         <li class="notify">
                             <a href="#">
                                 <i class="fa fa-shopping-cart green"></i>
-                                <p>You have pending payment</p>
-                                <span class="badge badge-success">1</span>
+                                <p>You have some new orders</p>
+                                <span class="badge badge-success">+10</span>
                             </a>
+                        </li>
+
+                        <li class="more">
+                            <a href="#">See all notifications</a>
                         </li>
                     </ul>
                     <!-- END Notifications Dropdown -->
@@ -205,7 +296,7 @@
                 <li class="user-profile">
                     <a data-toggle="dropdown" href="#" class="user-menu dropdown-toggle">
                         <img class="nav-user-photo" src="img/demo/avatar/avatar1.jpg" alt="Penny's Photo" />
-                        <span class="hhh" id="user_info">
+                        <span id="user_info">
                             Penny
                         </span>
                         <i class="fa fa-caret-down"></i>
@@ -286,7 +377,7 @@
             <div id="sidebar" class="navbar-collapse collapse">
                 <!-- BEGIN Navlist -->
                 <ul class="nav nav-list">
-                    <li>
+				    <li>
                         <a href="index.html">
                             <i class="fa fa-dashboard"></i>
                             <span>Dashboard</span>
@@ -328,13 +419,15 @@
                             <span>Announcement</span>
                         </a>
                     </li>
-					<li>
+					
+					<li class="active">
                         <a href="gallery.html">
                             <i class="fa fa-picture-o"></i>
                             <span>Gallery</span>
                         </a>
                     </li>
-                     <li  class="active">
+
+                     <li>
                         <a href="support.html">
                             <i class="fa fa-globe"></i>
                             <span>Support</span>
@@ -356,7 +449,8 @@
                 <!-- BEGIN Page Title -->
                 <div class="page-title">
                     <div>
-                        <h1><i class="fa fa-file-text-o"></i>New Ticket</h1>
+                        <h1><i class="fa fa-file-o"></i> Gallery</h1>
+                        <h4>Responsive photo gallery using colorbox</h4>
                     </div>
                 </div>
                 <!-- END Page Title -->
@@ -364,58 +458,186 @@
                 <!-- BEGIN Breadcrumb -->
                 <div id="breadcrumbs">
                     <ul class="breadcrumb">
-                       <li>
+                        <li>
                             <i class="fa fa-home"></i>
                             <a href="index.html">Home</a>
                             <span class="divider"><i class="fa fa-angle-right"></i></span>
                         </li>
-                        <li>
-                            <a href="support.html">My Ticket</a>
-                            <span class="divider"><i class="fa fa-angle-right"></i></span>
-                        </li>
-                        <li class="active"> New Ticket </li>
+                        <li class="active">Gallery</li>
                     </ul>
                 </div>
                 <!-- END Breadcrumb -->
 
-                <!-- SUPPORT TICKET -->
+                <!-- BEGIN Main Content -->
                 <div class="row">
                     <div class="col-md-12">
                         <div class="box">
+                            <div class="box-title">
+                                <h3><i class="fa fa-picture-o"></i> Gallery</h3>
+                                <div class="box-tool">
+                                    <a data-action="collapse" href="#"><i class="fa fa-chevron-up"></i></a>
+                                    <a data-action="close" href="#"><i class="fa fa-times"></i></a>
+                                </div>
+                            </div>
                             <div class="box-content">
-                                <div class="row">
-                                    <br/>
-                                    <a class="col-md-6" href="open_ticket.html">
-                                        <div class="well well-lg">
-                                            <h2><span>Technical Support</span></h2>
-                                            <p><span>Questions about technical problem on Smart Media services</span></p>
+                                <div class="clearfix">
+                                    <div class="pull-left">
+                                        <div class="btn-toolbar">
+                                            <div class="btn-group">
+                                                <select name="cat" class="chosen gallery-cat col-xs-12" data-placeholder="Filter category">
+                                                    <option value=""> </option>
+                                                    <option value="opt-1">Category-1</option>
+                                                    <option value="opt-2">Category-2</option>
+                                                    <option value="opt-3">Category-3</option>
+                                                    <option value="opt-4">Category-4</option>
+                                                    <option value="opt-5">Category-5</option>
+                                                </select>
+                                            </div>
+                                            <div class="btn-group">
+                                                <select name="sort" class="chosen gallery-sort" data-placeholder="Sort by" data-nosearch="true">
+                                                    <option value=""> </option>
+                                                    <option value="sort-1">Date</option>
+                                                    <option value="sort-2">Author</option>
+                                                    <option value="sort-3">Category</option>
+                                                </select>
+                                            </div>
+                                            <div class="btn-group">
+                                                <a href="#" class="btn btn-success show-tooltip" title="Apply filter"><i class="fa fa-check"></i></a>
+                                            </div>
                                         </div>
-                                    </a>
-                                    <a class="col-md-6" href="open_ticket.html">
-                                        <div class="well well-lg">
-                                            <h2><span>Sales Department</span></h2>
-                                            <p><span>You can ask about Smart Media product here</span></p>
+                                    </div>
+                                </div>
+                                <hr>
+                                <ul class="gallery">
+                                    <li>
+                                        <a href="img/1a.jpg" rel="prettyPhoto" title="Description of image">
+                                            <div>
+                                                <img src="img/1.jpg" alt="" />
+                                                <i></i>
+                                            </div>
+                                        </a>
+                                        <div class="gallery-tools">
+                                            <a href="confirmation_store.html"><i class="fa fa-shopping-cart"></i></a>
                                         </div>
-                                    </a>
-                                </div> 
-                                <div class="row">
-                                    <a class="col-md-6" href="open_ticket.html">
-                                        <div class="well well-lg">
-                                            <h2><span>Billing Support</span></h2>
-                                            <p><span>Questions about billing, package upgrade, payment confirmation, dan cost services on Smart Media</span></p>
+                                    </li>
+                                    <li>
+                                        <a href="img/2a.jpg" rel="prettyPhoto" title="Description of image">
+                                            <div>
+                                                <img src="img/2.jpg" alt="" />
+                                                <i></i>
+                                            </div>
+                                        </a>
+                                        <div class="gallery-tools">
+                                            <a href="confirmation_store.html"><i class="fa fa-shopping-cart"></i></a>
                                         </div>
-                                    </a>
-                                </div> 
+                                    </li>
+                                    <li>
+                                        <a href="img/3a.jpg" rel="prettyPhoto" title="Description of image">
+                                            <div>
+                                                <img src="img/3.jpg" alt="" />
+                                                <i></i>
+                                            </div>
+                                        </a>
+                                        <div class="gallery-tools">
+                                            <a href="confirmation_store.html"><i class="fa fa-shopping-cart"></i></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="img/4a.jpg" rel="prettyPhoto" title="Description of image">
+                                            <div>
+                                                <img src="img/4.jpg" alt="" />
+                                                <i></i>
+                                            </div>
+                                        </a>
+                                        <div class="gallery-tools">
+                                            <a href="confirmation_store.html"><i class="fa fa-shopping-cart"></i></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="img/5a.jpg" rel="prettyPhoto" title="Description of image">
+                                            <div>
+                                                <img src="img/5.jpg" alt="" />
+                                                <i></i>
+                                            </div>
+                                        </a>
+                                        <div class="gallery-tools">
+                                            <a href="confirmation_store.html"><i class="fa fa-shopping-cart"></i></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="img/6a.jpg" rel="prettyPhoto" title="Description of image">
+                                            <div>
+                                                <img src="img/6.jpg" alt="" />
+                                                <i></i>
+                                            </div>
+                                        </a>
+                                        <div class="gallery-tools">
+                                            <a href="confirmation_store.html"><i class="fa fa-shopping-cart"></i></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="img/7a.jpg" rel="prettyPhoto" title="Description of image">
+                                            <div>
+                                                <img src="img/7.jpg"alt="" />
+                                                <i></i>
+                                            </div>
+                                        </a>
+                                        <div class="gallery-tools">
+                                            <a href="confirmation_store.html"><i class="fa fa-shopping-cart"></i></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="img/8a.jpg" rel="prettyPhoto" title="Description of image">
+                                            <div>
+                                                <img src="img/8.jpg" alt="" />
+                                                <i></i>
+                                            </div>
+                                        </a>
+                                        <div class="gallery-tools">
+                                            <a href="confirmation_store.html"><i class="fa fa-shopping-cart"></i></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="img/9a.jpg" rel="prettyPhoto" title="Description of image">
+                                            <div>
+                                                <img src="img/9.jpg" alt="" />
+                                                <i></i>
+                                            </div>
+                                        </a>
+                                        <div class="gallery-tools">
+                                            <a href="confirmation_store.html"><i class="fa fa-shopping-cart"></i></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="img/10a.jpg" rel="prettyPhoto" title="Description of image">
+                                            <div>
+                                                <img src="img/10.jpg" alt="" />
+                                                <i></i>
+                                            </div>
+                                        </a>
+                                        <div class="gallery-tools">
+                                            <a href="confirmation_store.html"><i class="fa fa-shopping-cart"></i></a>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="text-center">
+                                    <ul class="pagination pagination-bullet">
+                                        <li class="active"><a href="#"></a></li>
+                                        <li><a href="#"></a></li>
+                                        <li><a href="#"></a></li>
+                                        <li><a href="#"></a></li>
+                                        <li><a href="#"></a></li>
+                                        <li><a href="#"></a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <!-- END SUPPORT TICKETS -->               
                 <!-- END Main Content -->
                 
                 <footer>
-                    <p>2017 © Andrian Smart Media</p>
+                    <p>2015 © FLATY Admin Template.</p>
                 </footer>
 
                 <a id="btn-scrollup" class="btn btn-circle btn-lg" href="#"><i class="fa fa-chevron-up"></i></a>
@@ -423,6 +645,12 @@
             <!-- END Content -->
         </div>
         <!-- END Container -->
+
+
+
+
+
+
 
 
         <!--basic scripts-->
@@ -433,26 +661,12 @@
         <script src="assets/jquery-cookie/jquery.cookie.js"></script>
 
         <!--page specific plugin scripts-->
-        <script type="text/javascript" src="assets/data-tables/jquery.dataTables.js"></script>
-        <script type="text/javascript" src="assets/data-tables/bootstrap3/dataTables.bootstrap.js"></script>
+        <script src="assets/prettyPhoto/js/jquery.prettyPhoto.js"></script>
+        <script src="assets/chosen-bootstrap/chosen.jquery.min.js"></script>
 
         <!--flaty scripts-->
         <script src="js/flaty.js"></script>
         <script src="js/flaty-demo-codes.js"></script>
-
-		<script type="text/javascript">
-            $(document).ready( function() {
-              $('#invoice-table').dataTable( {
-                "aoColumnDefs": [
-                  { "bSortable": true, "aTargets": [ 6 ] }
-                ] } );
-
-              $('#ticket-table').dataTable( {
-                "aoColumnDefs": [
-                  { "bSortable": true, "aTargets": [ 5 ] }
-                ] } );
-            });
-        </script>
 
     </body>
 </html>

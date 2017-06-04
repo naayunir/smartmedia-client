@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Dashboard - Client Area</title>
+        <title>Manage Site - Sub Domain</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -13,9 +13,7 @@
         <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
 
-        
         <!--page specific css styles-->
-        <link rel="stylesheet" href="assets/data-tables/bootstrap3/dataTables.bootstrap.css" />
 
         <!--flaty css styles-->
         <link rel="stylesheet" href="css/flaty.css">
@@ -86,7 +84,7 @@
             <button type="button" class="navbar-toggle navbar-btn collapsed" data-toggle="collapse" data-target="#sidebar">
                 <span class="fa fa-bars"></span>
             </button>
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="//localhost/smartmedia-client/view">
                 <small>
                     <i class="fa fa-html5"></i>
                     SMART MEDIA
@@ -219,14 +217,14 @@
                         </li>
 
                         <li>
-                            <a href="account-setting.html">
+                            <a href="#">
                                 <i class="fa fa-cog"></i>
                                 Account Settings
                             </a>
                         </li>
 
                         <li>
-                            <a href="edit-profile.html">
+                            <a href="#">
                                 <i class="fa fa-user"></i>
                                 Edit Profile
                             </a>
@@ -277,6 +275,16 @@
                 <!-- END Button User -->
             </ul>
             <!-- END Navbar Buttons -->
+            <!-- BEGIN Horizontal Menu -->
+            <ul class="nav flaty-nav navbar-collapse collapse" id="nav-horizontal">
+                <li>
+                    <a href="#">
+                        <i class="fa fa-list-alt"></i>
+                        <span>Sub Domain</span>
+                    </a>
+                </li>
+            </ul>
+            <!-- END Horizontal Menu -->
         </div>
         <!-- END Navbar -->
 
@@ -286,7 +294,7 @@
             <div id="sidebar" class="navbar-collapse collapse">
                 <!-- BEGIN Navlist -->
                 <ul class="nav nav-list">
-                    <li class="active">
+				    <li>
                         <a href="index.html">
                             <i class="fa fa-dashboard"></i>
                             <span>Dashboard</span>
@@ -328,12 +336,14 @@
                             <span>Announcement</span>
                         </a>
                     </li>
+					
 					<li>
                         <a href="gallery.html">
                             <i class="fa fa-picture-o"></i>
                             <span>Gallery</span>
                         </a>
                     </li>
+
                      <li>
                         <a href="support.html">
                             <i class="fa fa-globe"></i>
@@ -341,7 +351,6 @@
                         </a>
                     </li>
                 </ul>
-                <!-- END Navlist -->
 
                 <!-- BEGIN Sidebar Collapse Button -->
                 <div id="sidebar-collapse" class="visible-lg">
@@ -353,185 +362,187 @@
 
             <!-- BEGIN Content -->
             <div id="main-content">
-                <!-- BEGIN Page Title -->
-                <div class="page-title">
-                    <div>
-                        <h1><i class="fa fa-file-o"></i> Dashboard</h1>
-                        <h4>Overview, stats, chat and more</h4>
-                    </div>
-                </div>
-                <!-- END Page Title -->
-
-                <!-- BEGIN Breadcrumb -->
-                <div id="breadcrumbs">
-                    <ul class="breadcrumb">
-                        <li class="active"><i class="fa fa-home"></i> Home</li>
-                    </ul>
-                </div>
-                <!-- END Breadcrumb -->
 
 
-                <!-- BEGIN Tiles -->
-                <div class="row">
-                	<div class="col-md-3">
-                		<div class="tile tile-green">
-                            <div class="img">
-                                <i class="fa fa-desktop"></i>
-                            </div>
-                            <div class="content">
-                                <p class="big">3</p>
-                                <p class="title">My Sites</p>
-                            </div>
-                        </div>
-                	</div>
-                	<div class="col-md-3">
-                		<div class="tile tile-red">
-                            <div class="img">
-                                <i class="fa fa-files-o"></i>
-                            </div>
-                            <div class="content">
-                                <p class="big">2</p>
-                                <p class="title">Invoices Due</p>
-                            </div>
-                        </div>
-                	</div>
-                	<div class="col-md-3">
-                		<div class="tile tile-orange">
-                            <div class="img">
-                                <i class="fa fa-ticket"></i>
-                            </div>
-                            <div class="content">
-                                <p class="big">1</p>
-                                <p class="title">Active Tickets</p>
-                            </div>
-                        </div>
-                	</div>
-                	<div class="col-md-3">
-                		<div class="tile">
-                            <div class="img">
-                                <i class="fa fa-credit-card"></i>
-                            </div>
-                            <div class="content">
-                                <p class="big">Rp 667</p>
-                                <p class="title">Credit Balance</p>
-                            </div>
-                        </div>
-                	</div>
-                </div>
-
-                <!-- END Tiles -->
-
-
-                <!-- BEGIN Main Content -->
-
-                 <!-- INVOICES -->
-                <div class="row">
-                	<div class="open-ticket">
-                    	<div class="box">
-                        	<div class="box-title no-bg">
-                            	<h3>Invoices Due <span class="badge badge-xxlarge badge-gray">2</span></h3>
-                        	</div>
-                    	</div>
-                	</div>
-                </div>
-
-                <div class="box">
-                    <div class="table-responsive">
-                    	<table class="table table-advance" id="invoice-table">
-                            <thead class="panel-info">
-                                <tr>
-                                    <th>Invoice #</th>
-                                    <th>Invoice Date</th>
-                                    <th>Due Date</th>
-                                    <th>Total</th>
-                                    <th>Balance</th>
-                                    <th>Status</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr class="table-flag-blue">
-                                    
-                                    <td><a href="">94633</a></td>
-                                    <td>11/05/2017</td>
-                                    <td>17/05/2017</td>
-                                    <td>Rp. 160.000,00</td>
-                                    <td>Rp. 667,00</td>
-                                    <td>Waiting Confirmation</td>
-                                </tr>
-
-                                <tr class="table-flag-blue">
-                                    
-                                    <td><a href="">96633</a></td>
-                                    <td>11/05/2017</td>
-                                    <td>17/05/2017</td>
-                                    <td>Rp. 224.000,00</td>
-                                    <td>Rp. 667,00</td>
-                                    <td>Waiting Confirmation</td>
-                                </tr>        
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                <!-- END INVOICES -->
-
-                <!-- SUPPORT TICKET -->
-                <div class="row">
-                    <div class="open-ticket">
-                    <div class="box">
-                        <div class="box-title no-bg">
-                            <h3>Open Support Tickets <span class="badge badge-xxlarge badge-gray">3</span></h3>
-                            <div class="box-tool">
-                                <a class="btn btn-warning btn-lg"><i class="fa fa-edit"></i> Open new tickets</a>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-
-                <div class="box">                            
-                    <div class="table-responsive">
-                        <table class="table table-advance" id="ticket-table">
-                            <thead class="panel-info">
-                                <tr>
-                                    <th>Date</th>
-                                    <th>Department</th>
-                                    <th>Subject</th>
-                                    <th>Status</th>
-                                    <th>Last Update</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr class="table-flag-blue">                                    
-                                    <td>13/10/2017</td>
-                                    <td>Hosting</td>
-                                    <td>Kenapa CPanel saya tidak bisa dibuka ?</td>
-                                    <td><span class="label label-large label-info">Solved</span></td>
-                                    <td>21/10/2017</td>
-                                </tr>
-                                <tr class="table-flag-blue">                                    
-                                    <td>3/11/2017</td>
-                                    <td>Domain</td>
-                                    <td>Kenapa terjadi Internal Server error ?</td>
-                                    <td><span class="label label-large label-success">Active</span></td>
-                                    <td>16/11/2017</td>
-                                </tr>
-                                <tr class="table-flag-blue">                                    
-                                    <td>3/11/2017</td>
-                                    <td>Lain-Lain</td>
-                                    <td>Muncul Halaman Mercusuar</td>
-                                    <td><span class="label label-large label-success">Active</span></td>
-                                    <td>16/11/2017</td>
-                                </tr>                              
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                <!-- END SUPPORT TICKETS -->               
-                <!-- END Main Content -->
                 
-                <footer>
-                    <p>2017 © Andrian Smart Media</p>
-                </footer>
+                <!-- BEGIN Main Content -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="box">
+                            <div class="box-content">
+                                <div class="invoice">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <h2><i class="fa fa-cloud"></i> Smart Media</h2>
+                                            <p class="font-size-17"><strong>Invoice</strong> # 7628-16</p>
+                                        </div>
+                                        <div class="col-md-6 invoice-info">
+                                            <div class="distance3">
+                                                <h4><strong>UNPAID</strong></h4>
+                                                <br/>
+                                                <p>
+                                                    Silahkan transfer ke : <br/>
+                                                    BANK BCA CAB. Gudang Peluru<br/>
+                                                    A.n. Alfian Pamungkas Sakawiguna<br/>
+                                                    No. Rekening 272-090-889-2<br/>
+                                                    Pastikan anda sudah mentransfer uang sebelum mengeksekusi tombol.<br/>
+                                                    Mogon tuliskan berita:INVOICE-7628-16 pada kolom berita transfer.<br/>
+                                                    Atau jika via AM silahkan transfer dengan jumlah : Rp. 324444<br/>
+                                                    (Transfer dengan angka khusus hanya berlaku 3 hari)<br/>
+                                                </p>
+                                                <button class="btn">Cek Pembayaran</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr/>
+                                    <div class="row">
+                                        <div class="col-md-3 company-info">
+                                            <p>
+                                                Invoiced To :<br/><br/>
+                                                illiyin.co<br/>
+                                                muhammad luqman hakim<br/>
+                                                Perum. Puri Nirwana Keben Kav. 7 Sukun, Kota Malang, jl. gading pesantren 38 Malang<br/>
+                                                Malang, Jawa Timur, 65146<br/> 
+                                                Indonesia<br/>
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3 company-info">
+                                            <p>
+                                                Pay To :<br/><br/>
+                                                PT. Cloud Hosting Indonesia<br/>
+                                                NPWP : 73.599.599.5-411.000<br/>
+                                                Pinus Raya Reni Jaya Ag-1 No.01 Pamulang Barat, Pamulang.<br/>
+                                                Tangerang Selatan, Banten.<br/>
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3 company-info">
+                                            <p>
+                                                Invoiced Date :<br/><br/>
+                                                Wednesday, June 31th, 2017<br/>
+                                                Due Date :<br/>
+                                                Friday, July 2nd, 2017<br/>
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3 company-info">
+                                            <div class="form-group">
+                                               <label class="col-sm-12 control-label">Payment Method</label><br/>
+                                               <div class="col-sm-9 col-lg-10 controls">
+                                                  <select class="form-control input-sm" tabindex="1">
+                                                     <option value="BCA">BCA</option>
+                                                     <option value="ATM">ATM</option>
+                                                  </select>
+                                               </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br/>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">APPLY CREDIT</h4>
+                                                </div>
+                                                <div class="panel-body">
+                                                    Your credit balance is Rp. 596-. This can be applied to the invoice using the form below. Enter the amount to apply : <br/>
+                                                    <div class="form-group">
+                                                        <label class="col-sm-4 col-lg-4 control-label"></label>
+                                                        <div class="col-sm-5 col-lg-4 controls">
+                                                            <div class="input-group">
+                                                                <input type="text" placeholder="" class="form-control">
+                                                                <span class="input-group-btn">
+                                                                    <button class="btn" type="button">Apply</button>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <table class="table table-responsive">
+                                                <thead>
+                                                    <tr>
+                                                        <th>DESCRIPTION</th>
+                                                        <th class="text-right">AMOUNT</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Starter Pro - rumahdimalang.info (26/01/2017 - 25/01/2018)<br/>Location:Singapore*</td>
+                                                        <td class="text-right">Rp. 120,000-</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Domain Renewal - rumahdimalang.info - 1 Year (26/01/2017 - 25/01/2018)<br/>+ DNS Management<br/>+ Email Fowarding* </td>
+                                                        <td class="text-right">Rp. 145,000-</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Late Free (Added 31/01/2017)* </td>
+                                                        <td class="text-right">Rp. 29,150- </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Sub Total</td>
+                                                        <td class="text-right">Rp. 294,150- </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>10.00% PPN </td>
+                                                        <td class="text-right">Rp. 29,415- </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Credit</td>
+                                                        <td class="text-right">Rp. 0- </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Total</td>
+                                                        <td class="text-right">Rp. 323,565- </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <p><span>* Indicates a taxed item. </span></p>
+                                            <table class="table table-responsive">
+                                                <thead>
+                                                    <tr>
+                                                        <th>TRANSACTION DATE</th>
+                                                        <th>GATEWAY</th>
+                                                        <th>TRANSACTION ID</th>
+                                                        <th class="text-right">AMOUNT</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>No Related Transactions Found</td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td class="text-right"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Balance</td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td class="text-right">Rp. 323,565-</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div><br/><br/>
+                                    <div class="row">
+                                        <div class="col-md-12 text-center">
+                                            <a href="index.html">Back to Client Area</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- END Main Content -->
+
 
                 <a id="btn-scrollup" class="btn btn-circle btn-lg" href="#"><i class="fa fa-chevron-up"></i></a>
             </div>
@@ -548,26 +559,17 @@
         <script src="assets/jquery-cookie/jquery.cookie.js"></script>
 
         <!--page specific plugin scripts-->
-        <script type="text/javascript" src="assets/data-tables/jquery.dataTables.js"></script>
-        <script type="text/javascript" src="assets/data-tables/bootstrap3/dataTables.bootstrap.js"></script>
+        <script src="assets/flot/jquery.flot.js"></script>
+        <script src="assets/flot/jquery.flot.resize.js"></script>
+        <script src="assets/flot/jquery.flot.pie.js"></script>
+        <script src="assets/flot/jquery.flot.stack.js"></script>
+        <script src="assets/flot/jquery.flot.crosshair.js"></script>
+        <script src="assets/flot/jquery.flot.tooltip.min.js"></script>
+        <script src="assets/sparkline/jquery.sparkline.min.js"></script>
 
         <!--flaty scripts-->
         <script src="js/flaty.js"></script>
         <script src="js/flaty-demo-codes.js"></script>
-
-		<script type="text/javascript">
-            $(document).ready( function() {
-              $('#invoice-table').dataTable( {
-                "aoColumnDefs": [
-                  { "bSortable": true, "aTargets": [ 6 ] }
-                ] } );
-
-              $('#ticket-table').dataTable( {
-                "aoColumnDefs": [
-                  { "bSortable": true, "aTargets": [ 5 ] }
-                ] } );
-            });
-        </script>
 
     </body>
 </html>
