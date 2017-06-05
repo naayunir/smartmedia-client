@@ -16,6 +16,7 @@
         
         <!--page specific css styles-->
         <link rel="stylesheet" href="assets/data-tables/bootstrap3/dataTables.bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="assets/bootstrap-fileupload/bootstrap-fileupload.css" />
 
         <!--flaty css styles-->
         <link rel="stylesheet" href="css/flaty.css">
@@ -286,7 +287,7 @@
             <div id="sidebar" class="navbar-collapse collapse">
                 <!-- BEGIN Navlist -->
                 <ul class="nav nav-list">
-                    <li class="active">
+                    <li>
                         <a href="index.html">
                             <i class="fa fa-dashboard"></i>
                             <span>Dashboard</span>
@@ -328,12 +329,7 @@
                             <span>Announcement</span>
                         </a>
                     </li>
-					<li>
-                        <a href="gallery.html">
-                            <i class="fa fa-picture-o"></i>
-                            <span>Gallery</span>
-                        </a>
-                    </li>
+
                      <li>
                         <a href="support.html">
                             <i class="fa fa-globe"></i>
@@ -363,71 +359,81 @@
 				
 				<!-- BEGIN Form -->
 				<div class="container">
-					<div class="col sm-9">
+					<div class="col sm-12">
 					<form class="form-horizontal">
 							<div class="form-group">
 								<label for="inputfirstname" class="col-sm-2 control-label">First Name</label>
-									<div class="col-sm-7">
+									<div class="col-sm-8">
 										<input type="text" class="form-control" placeholder>
 									</div>
+									<div class="col-sm-2"></div>
 							</div>
 							<div class="form-group">
 								<label for="inputlasttname" class="col-sm-2 control-label">Last Name</label>
-									<div class="col-sm-7">
+									<div class="col-sm-8">
 										<input type="text" class="form-control" placeholder>
 									</div>
+									<div class="col-sm-2"></div>
 							</div>
 							<div class="form-group">
 								<label for="inputcompanyname" class="col-sm-2 control-label">Company Name</label>
-									<div class="col-sm-7">
+									<div class="col-sm-8">
 										<input type="text" class="form-control" placeholder>
 									</div>
+									<div class="col-sm-2"></div>
 							</div>	
 							<div class="form-group">		
 								<label for="inputemailaddress" class="col-sm-2 control-label">Email Address</label>
-									<div class="col-sm-7">
+									<div class="col-sm-8">
 										<input type="email" class="form-control" placeholder>
 									</div>
+									<div class="col-sm-2"></div>
 							</div>		
 							<div class="form-group">		
 								<label for="inputphonenumber" class="col-sm-2 control-label">Phone Number</label>
-									<div class="col-sm-7">
+									<div class="col-sm-8">
 										<input type="tel" class="form-control" placeholder>
 									</div>
+									<div class="col-sm-2"></div>
 							</div>		
 							<div class="form-group">		
 								<label for="inputaddress1" class="col-sm-2 control-label">Address 1</label>
-									<div class="col-sm-7">
+									<div class="col-sm-8">
 										<input type="text" class="form-control" placeholder>
 									</div>
+									<div class="col-sm-2"></div>
 							</div>		
 							<div class="form-group">		
 								<label for="inputaddress2" class="col-sm-2 control-label">Address 2</label>
-									<div class="col-sm-7">
+									<div class="col-sm-8">
 										<input type="text" class="form-control" placeholder>
 									</div>
+									<div class="col-sm-2"></div>
 							</div>		
 							<div class="form-group">		
 								<label for="inputcity" class="col-sm-2 control-label">City</label>
-									<div class="col-sm-7">
+									<div class="col-sm-8">
 										<input type="text" class="form-control" placeholder>
 									</div>
+									<div class="col-sm-2"></div>
 							</div>		
 							<div class="form-group">
 								<label for="inputstate" class="col-sm-2 control-label">State/Region</label>
-									<div class="col-sm-7">
+									<div class="col-sm-8">
 										<input type="text" class="form-control" placeholder>
 									</div>
+									<div class="col-sm-2"></div>
 							</div>		
 							<div class="form-group">		
 								<label for="inputzipcode" class="col-sm-2 control-label">ZIP Code</label>
-									<div class="col-sm-7">
+									<div class="col-sm-8">
 										<input type="text" class="form-control" placeholder>
 									</div>
+									<div class="col-sm-2"></div>
 							</div>		
 							<div class="form-group">		
 							<label for="inputcountry" class="col-sm-2 control-label">Country</label>
-								<div class="col-sm-7">
+								<div class="col-sm-8">
 									<select class="form-control">
 										<option>Indonesia</option>
 										<option>Afganistan</option>
@@ -451,16 +457,29 @@
 										<option>Malaysia</option>
 										<option>Thailand</option>
 										<option>Turki</option>
-										
 									</select>
 								</div>
+								<div class="col-sm-2"></div>
 							</div>	
-							<div class="form-group">
-								<label for="uploadfoto" class="col-sm-2 control-label">Upload Foto</label>
-								<div class="col-sm-7">
-									<input type="file" id="exampleInputFile">
-								</div>	
-							</div>
+                            <div class="form-group">
+								<label class="col-sm-3 col-lg-2 control-label">Image Upload</label>
+                                    <div class="col-sm-9 col-lg-10 controls">
+                                        <div class="fileupload fileupload-new" data-provides="fileupload">
+											<div class="fileupload-new img-thumbnail" style="width: 210px; height: 160px;">
+                                               <img src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&amp;text=no+image" alt="" />
+                                            </div>
+                                            <div class="fileupload-preview fileupload-exists img-thumbnail" style="max-width: 200px; max-height: 150px; line-height: 20px;"></div>
+											<div>
+												<span class="btn btn-default btn-file"><span class="fileupload-new">Select image</span>
+												<span class="fileupload-exists">Change</span>
+												<input type="file" class="file-input" /></span>
+												<a href="#" class="btn btn-default fileupload-exists" data-dismiss="fileupload">Remove</a>
+											</div>
+										</div>
+                                         <span class="label label-important">NOTE!</span>
+                                         <span>Attached image img-thumbnail is supported in Latest Firefox, Chrome, Opera, Safari and Internet Explorer 10 only</span>
+                                    </div>
+                            </div>		
 							
 							<a class="btn btn-success btn-save btn-lg ">Save Changes</a>
 					</form>
@@ -492,6 +511,7 @@
         <!--page specific plugin scripts-->
         <script type="text/javascript" src="assets/data-tables/jquery.dataTables.js"></script>
         <script type="text/javascript" src="assets/data-tables/bootstrap3/dataTables.bootstrap.js"></script>
+		<script type="text/javascript" src="assets/bootstrap-fileupload/bootstrap-fileupload.min.js"></script>
 
         <!--flaty scripts-->
         <script src="js/flaty.js"></script>
