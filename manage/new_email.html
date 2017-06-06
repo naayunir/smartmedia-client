@@ -19,6 +19,7 @@
         <link rel="stylesheet" href="css/flaty.css">
         <link rel="stylesheet" href="css/flaty-responsive.css">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="assets/bootstrap-wysihtml5/bootstrap-wysihtml5.css">
 
         <link rel="shortcut icon" href="img/favicon.png">
     </head>
@@ -370,122 +371,6 @@
                                     <form class="mail-compose form-horizontal" action="#">
                                         <p><input type="text" placeholder="To" class="form-control" /></p>
                                         <p><input type="text" placeholder="Subject" class="form-control" /></p>
-                                        <p>
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <div class="wysihtml5-toolbar">
-                                                        <span>
-                                                            <div class="btn-group">
-                                                                    <a class="btn btn-default btn dropdown-toggle" data-toggle="dropdown" href="#">
-                                                                        <i class="fa fa-font"></i>&nbsp;<span class="current-font">Normal text</span>&nbsp;<b class="caret"></b>
-                                                                    </a>
-                                                                    <ul class="dropdown-menu">
-                                                                        <li>
-                                                                            <a data-wysihtml5-command="formatBlock" data-wysihtml5-command-value="div" tabindex="-1" href="javascript:;" unselectable="on">Normal text</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a data-wysihtml5-command="formatBlock" data-wysihtml5-command-value="h1" tabindex="-1" href="javascript:;" unselectable="on">Heading 1</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a data-wysihtml5-command="formatBlock" data-wysihtml5-command-value="h2" tabindex="-1" href="javascript:;" unselectable="on">Heading 2</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a data-wysihtml5-command="formatBlock" data-wysihtml5-command-value="h3" tabindex="-1" href="javascript:;" unselectable="on">Heading 3</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a data-wysihtml5-command="formatBlock" data-wysihtml5-command-value="h4" href="javascript:;" unselectable="on">Heading 4</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a data-wysihtml5-command="formatBlock" data-wysihtml5-command-value="h5" href="javascript:;" unselectable="on">Heading 5</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a data-wysihtml5-command="formatBlock" data-wysihtml5-command-value="h6" href="javascript:;" unselectable="on">Heading 6</a>
-                                                                        </li>
-                                                                    </ul>
-                                                            </div>
-                                                        </span>
-                                                        <span>
-                                                            <div class="btn-group">
-                                                                <a class="btn btn-default btn" data-wysihtml5-command="bold" title="Bold" tabindex="-1" href="javascript:;" unselectable="on">
-                                                                    <i class="fa fa-bold"></i>
-                                                                </a>
-                                                                <a class="btn btn-default btn" data-wysihtml5-command="italic" title="Italic" tabindex="-1" href="javascript:;" unselectable="on">
-                                                                    <i class="fa fa-italic"></i>
-                                                                </a>
-                                                                <a class="btn btn-default btn" data-wysihtml5-command="underline" title="Underline" tabindex="-1" href="javascript:;" unselectable="on">
-                                                                    <i class="fa fa-underline"></i>
-                                                                </a>
-                                                            </div>
-                                                        </span>
-                                                        <span>
-                                                            <div class="btn-group">
-                                                                <a class="btn btn-default btn" data-wysihtml5-command="insertUnorderedList" title="Unordered list" tabindex="-1" href="javascript:;" unselectable="on">
-                                                                    <i class="glyphicon glyphicon-list"></i>
-                                                                </a>
-                                                                <a class="btn btn-default btn" data-wysihtml5-command="insertOrderedList" title="Ordered list" tabindex="-1" href="javascript:;" unselectable="on">
-                                                                    <i class="glyphicon glyphicon-th-list"></i>
-                                                                </a>
-                                                                <a class="btn btn-default btn" data-wysihtml5-command="Outdent" title="Outdent" tabindex="-1" href="javascript:;" unselectable="on">
-                                                                    <i class="glyphicon glyphicon-indent-right"></i>
-                                                                </a>
-                                                                <a class="btn btn-default btn" data-wysihtml5-command="Indent" title="Indent" tabindex="-1" href="javascript:;" unselectable="on">
-                                                                    <i class="glyphicon glyphicon-indent-left"></i>
-                                                                </a>
-                                                            </div>
-                                                        </span>
-                                                        <span>
-                                                            <div class="bootstrap-wysihtml5-insert-link-modal modal fade">
-                                                                <div class="modal-dialog">
-                                                                    <div class="modal-content">
-                                                                        <div class="modal-header">
-                                                                            <a class="close" data-dismiss="modal">×</a>
-                                                                            <h3 class="modal-title">Insert link</h3>
-                                                                        </div>
-                                                                        <div class="modal-body">
-                                                                            <input value="http://" class="bootstrap-wysihtml5-insert-link-url form-control">
-                                                                            <label class="checkbox"><input type="checkbox" class="bootstrap-wysihtml5-insert-link-target" checked="">Open link in new window</label>
-                                                                        </div>
-                                                                        <div class="modal-footer">
-                                                                            <a href="#" class="btn btn-default" data-dismiss="modal">Cancel</a>
-                                                                            <a href="#" class="btn btn-primary" data-dismiss="modal">Insert link</a>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </span>
-                                                        <span>
-                                                            <a class="btn btn-default" data-wysihtml5-command="createLink" title="Insert link" tabindex="-1" href="javascript:;" unselectable="on">
-                                                                <i class="glyphicon glyphicon-share"></i>
-                                                            </a>
-                                                        </span>
-                                                        <span>
-                                                            <div class="bootstrap-wysihtml5-insert-image-modal modal fade">
-                                                                <div class="modal-dialog">
-                                                                    <div class="modal-content">
-                                                                        <div class="modal-header">
-                                                                            <a class="close" data-dismiss="modal">×</a>
-                                                                            <h3 class="modal-title">Insert image</h3>
-                                                                        </div>
-                                                                        <div class="modal-body">
-                                                                            <input value="http://" class="bootstrap-wysihtml5-insert-image-url form-control">
-                                                                        </div>
-                                                                        <div class="modal-footer">
-                                                                            <a href="#" class="btn btn-default" data-dismiss="modal">Cancel</a>
-                                                                            <a href="#" class="btn btn-primary" data-dismiss="modal">Insert image</a>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </span>
-                                                        <span>
-                                                            <a class="btn btn-default btn" data-wysihtml5-command="insertImage" title="Insert image" tabindex="-1" href="javascript:;" unselectable="on">
-                                                                <i class="glyphicon glyphicon-picture"></i>
-                                                            </a>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </p>
                                         <p><textarea class="form-control wysihtml5" rows="6"></textarea></p>
                                         <p>
                                             <button type="submit" class="btn btn-primary"><i class="fa fa-rocket"></i> Send</button>
@@ -526,6 +411,8 @@
         <script src="assets/flot/jquery.flot.crosshair.js"></script>
         <script src="assets/flot/jquery.flot.tooltip.min.js"></script>
         <script src="assets/sparkline/jquery.sparkline.min.js"></script>
+        <script type="text/javascript" src="assets/bootstrap-wysihtml5/wysihtml5-0.3.0.js"></script>
+        <script type="text/javascript" src="assets/bootstrap-wysihtml5/bootstrap-wysihtml5.js"></script>
 
         <!--flaty scripts-->
         <script src="js/flaty.js"></script>
