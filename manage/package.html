@@ -361,50 +361,56 @@
                 <!-- BEGIN Main Content -->
                 <div class="row">
                     <div class="col-sm-12">
-                        <div class="box">
-                            <div class="box-content">
-                                <div class="distance">
-                                    <div class="row">
-                                        <div class="col-sm-4 col-lg-3 ">
-                                            <span><strong> Active Package</strong></span>
+                        <div class="panel">
+                            <div class="panel-body">
+                                <div class="col-md-12">
+                                    <h3>Your Package</h3>
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <td width="25%"><strong>Active Package</strong></td>
+                                                <td width="50%">Basic</td>
+                                                <td><a href="manage/package.html" class="btn btn-gray pull-right">Upgrade <i class="fa fa-chevron-right"></i></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Detail Package</strong></td>
+                                                <td>
+                                                    <table>
+                                                        <tr>
+                                                            <td>1 Website</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>1 Web Mail Account</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2 GB Storage</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>1 GB Bandwidth</td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel">
+                            <div class="panel-body">
+                                <div class="col-md-12">
+                                    <h3>Activate Voucher</h3>
+                                    <p>You can upgrade your package or extend your active period using voucher from store</p>
+                                    <form class="form-horizontal">
+                                        <div class="form-group col-md-8">
+                                            <input type="text" name="voucher" placeholder="Enter voucher code" class="form-control">
                                         </div>
-                                        <div class="col-sm-6 col-lg-7">Basic</div>
-                                        <div class="col-sm-2 col-lg-2">
-                                            <a href="konfirmasi.html">Upgrade</a>
+                                        <div class="form-group col-md-4">
+                                            <input type="submit" name="submit" class="form-control btn-success" value="Activate">
                                         </div>
-                                    </div>
-                                    <br/>
-                                    <div class="row">
-                                        <div class="col-sm-4 col-lg-3 ">
-                                            <span><strong> Details Package </strong></span>
-                                        </div>
-                                        <div class="col-sm-6 col-lg-7">
-                                            <p>30 days active periode </p>
-                                            <p>2GB Storage </p>
-                                            <p>2GB Bandwith </p>
-                                            <p>1 Subdomain </p>
-                                            <p>1 Webmail </p>
-                                        </div>
-                                        <div class="col-sm-2 col-lg-2">
-                                            <a href="konfirmasi.html">Extend</a>
-                                        </div>
-                                    </div>
-                                    <br/>
-                                    <div class="row">
-                                        <div class="col-sm-4 col-lg-3 ">
-                                            <span><strong> Enter Your Voucher Code </strong></span>
-                                        </div>
-                                        <div class="col-sm-6 col-lg-7">
-                                            <div class="form-group">
-                                                <div class="controls">
-                                                    <input type="text" placeholder="Voucher" class="form-control">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-2 col-lg-2">
-                                            <a href="confirmation.html" class="btn">Voucher</a>
-                                        </div>
-                                    </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>

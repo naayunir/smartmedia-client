@@ -242,31 +242,37 @@ footer {
 }
 
 .big-tile {
-	height: 370px;
 	display: block;
-	position: absolute;
-	/*height: 120px;*/
-	padding: 10px;
+	position: relative;
+	width : 100%;
+	height: 350px;
+	padding: 15px;
+	margin-left: 0;
 	margin-bottom: 20px;
 	color: #fff;
 	overflow: hidden;
 
 }
 
-.big-tile .img .img-center{
+.big-tile .img-center{
+	position: absolute;
 	top: 0;
 	left: 0;
-	margin: auto;
 	right: 0;
-	width: 128px;
 	bottom: 0;
-	height: 128px;
-
-}
-
-.big-tile .img .img-center img{
+	height: 200px;
+	width: 200px;
+	text-align: center;
 	margin: auto;
-	height: 128px;
-	width : 128px;
-
+	padding-bottom: 15px;
+}
+.big-tile .text-center{
+	position: absolute;
+	text-align: center;
+	margin: auto;
+	top: auto;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding-bottom: 15px;
 }
